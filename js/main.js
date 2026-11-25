@@ -203,7 +203,6 @@
         },
         {
           id: "edu-sman1",
-          logo: "./logo-sman1-gringsing.jpg",
           year: "2023 – 2026",
           category: "education",
           role: "Jurusan IPA — Lulusan Siswa Terbaik 1",
@@ -447,7 +446,7 @@
       const ctx = canvas.getContext("2d");
       let width, height;
       let particles = [];
-      const particleCount = window.innerWidth < 768 ? 30 : 60;
+      const particleCount = window.innerWidth < 768 ? 10 : 22;
 
       function resize() {
         width = canvas.width = window.innerWidth;
@@ -482,7 +481,9 @@
         particles.push(new Particle());
       }
 
+      let animationFrame;
       function animate() {
+        if (document.hidden) return;
         ctx.clearRect(0, 0, width, height);
 
         for (let i = 0; i < particles.length; i++) {
@@ -491,11 +492,11 @@
             const dy = particles[i].y - particles[j].y;
             const dist = Math.sqrt(dx * dx + dy * dy);
 
-            if (dist < 125) {
+            if (dist < 90) {
               ctx.beginPath();
               ctx.moveTo(particles[i].x, particles[i].y);
               ctx.lineTo(particles[j].x, particles[j].y);
-              ctx.strokeStyle = `rgba(0, 229, 255, ${0.14 * (1 - dist / 125)})`;
+              ctx.strokeStyle = `rgba(0, 229, 255, ${0.10 * (1 - dist / 90)})`;
               ctx.lineWidth = 0.7;
               ctx.stroke();
             }
@@ -507,9 +508,12 @@
           p.draw();
         });
 
-        requestAnimationFrame(animate);
+        animationFrame = requestAnimationFrame(animate);
       }
-
+      document.addEventListener("visibilitychange", () => {
+        if (!document.hidden) animate();
+        else cancelAnimationFrame(animationFrame);
+      });
       animate();
     }
 
