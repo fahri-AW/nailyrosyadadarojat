@@ -203,7 +203,7 @@
         },
         {
           id: "edu-sman1",
-          logo: "logo-sman1-gringsing.png",
+          logo: "./logo-sman1-gringsing.png",
           year: "2023 – 2026",
           category: "education",
           role: "Jurusan IPA — Lulusan Siswa Terbaik 1",
