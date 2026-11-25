@@ -1376,35 +1376,7 @@ KETERAMPILAN DAN SERTIFIKASI
         showToast("Sertifikat baru berhasil ditambahkan!", "success");
       });
 
-      // Inline Document Form Handler
-      document.getElementById("admin-inline-doc-form")?.addEventListener("submit", e => {
-        e.preventDefault();
-        const name = document.getElementById("new-doc-name").value.trim();
-        const desc = document.getElementById("new-doc-desc").value.trim();
-        if (!name || !desc) return;
 
-        const ext = name.split(".").pop().toUpperCase();
-        const type = ["PDF", "DOCX", "JPG"].includes(ext) ? ext : "DOCX";
-
-        const newDoc = {
-          id: "doc-" + Date.now(),
-          name,
-          category: "cv",
-          categoryName: "Karya Ilmiah / Dokumen",
-          type,
-          size: "280 KB",
-          date: "2026",
-          description: desc
-        };
-
-        appState.documents.unshift(newDoc);
-        saveAppState();
-        renderDocuments();
-        renderAdminDocumentsList();
-        updateAdminStats();
-        e.target.reset();
-        showToast("Berkas dokumen baru berhasil ditambahkan!", "success");
-      });
     }
 
     function updateAdminStats() {
