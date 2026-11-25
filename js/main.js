@@ -832,8 +832,9 @@
 
       const svgDataUrl = window.generateCertificateVisualDataUrl(cert);
       const a = document.createElement("a");
-      a.href = svgDataUrl;
-      a.download = `Piagam_${cert.title.replace(/[^a-zA-Z0-9]+/g, "_")}_Naily_Rosyada.svg`;
+      // Prefer the original uploaded certificate image when available.
+      a.href = cert.image || svgDataUrl;
+      a.download = cert.image ? cert.image.split("/").pop() : `Piagam_${cert.title.replace(/[^a-zA-Z0-9]+/g, "_")}_Naily_Rosyada.svg`;
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
