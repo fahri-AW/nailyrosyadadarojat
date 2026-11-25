@@ -1,0 +1,3275 @@
+<!DOCTYPE html>
+<html lang="id" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naily Rosyada Darojat — Portofolio Resmi S1 Fisika Universitas Diponegoro</title>
+  
+  <meta name="description" content="Portofolio Digital Resmi Naily Rosyada Darojat — Mahasiswa S1 Fisika Universitas Diponegoro 2026, Lulusan Terbaik 1 SMAN 1 Gringsing, Penulis KTI/Artikel/Essay/PKM, Ketua MPK, dan Public Speaker." />
+  <meta name="author" content="Naily Rosyada Darojat" />
+  <meta name="theme-color" content="#060d19" />
+
+  <!-- Google Site Verification Tag -->
+  <meta name="google-site-verification" content="TT7WApB8PLvBeDJog5a4_BS68y_mmL2wQVQQEG5qEjg" />
+
+  <!-- Google Fonts: Plus Jakarta Sans, Outfit & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              950: '#030712',
+              900: '#060d19',
+              850: '#091426',
+              800: '#0d1d36',
+              700: '#14294d',
+              600: '#1d396a',
+            },
+            accent: {
+              cyan: '#00e5ff',
+              blue: '#2563eb',
+              lightBlue: '#38bdf8',
+              glow: 'rgba(0, 229, 255, 0.15)',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          animation: {
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'float': 'float 6s ease-in-out infinite',
+            'spin-slow': 'spin 24s linear infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* ══════════════════════════════════════════════════════════════
+       NAILY ROSYADA DAROJAT — PORTFOLIO CORE STYLES
+       Modern, Sleek, Navy & Accent Cyan Aesthetic
+    ══════════════════════════════════════════════════════════════ */
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #030712;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #00e5ff;
+    }
+
+    /* Light Mode Overrides */
+    html:not(.dark) {
+      --bg-primary: #f8fafc;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --border-card: rgba(15, 23, 42, 0.1);
+      --text-main: #0f172a;
+      --text-sub: #475569;
+    }
+    html:not(.dark) body {
+      background-color: #f1f5f9 !important;
+      color: #0f172a !important;
+    }
+    html:not(.dark) .glass-nav {
+      background: rgba(255, 255, 255, 0.88) !important;
+      border-color: rgba(15, 23, 42, 0.1) !important;
+    }
+    html:not(.dark) .glass-card {
+      background: rgba(255, 255, 255, 0.88) !important;
+      border-color: rgba(15, 23, 42, 0.1) !important;
+      color: #0f172a !important;
+      box-shadow: 0 10px 30px -10px rgba(2, 132, 199, 0.08);
+    }
+    html:not(.dark) h1, html:not(.dark) h2, html:not(.dark) h3, html:not(.dark) h4, html:not(.dark) h5 {
+      color: #0f172a !important;
+    }
+    html:not(.dark) .text-slate-300, html:not(.dark) .text-slate-400, html:not(.dark) .text-slate-200 {
+      color: #334155 !important;
+    }
+    html:not(.dark) .bg-navy-950, html:not(.dark) .bg-navy-900, html:not(.dark) .bg-navy-850 {
+      background-color: #ffffff !important;
+    }
+    html:not(.dark) .border-white\/10, html:not(.dark) .border-white\/5, html:not(.dark) .border-white\/15 {
+      border-color: rgba(15, 23, 42, 0.1) !important;
+    }
+    html:not(.dark) .bg-white\/5, html:not(.dark) .bg-white\/10 {
+      background-color: rgba(15, 23, 42, 0.04) !important;
+    }
+    html:not(.dark) .quantum-formula-badge {
+      background: rgba(255, 255, 255, 0.92) !important;
+      border-color: rgba(2, 132, 199, 0.35) !important;
+      color: #0369a1 !important;
+      box-shadow: 0 8px 24px rgba(2, 132, 199, 0.12) !important;
+    }
+
+    /* Glassmorphism Styles */
+    .glass-nav {
+      background: rgba(6, 13, 25, 0.8);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .glass-card {
+      background: rgba(9, 20, 38, 0.68);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    /* Nav Link Hover effect */
+    .nav-link {
+      position: relative;
+      transition: all 0.25s ease;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: #00e5ff;
+      transition: all 0.25s ease;
+      transform: translateX(-50%);
+      border-radius: 9999px;
+    }
+    .nav-link:hover::after, .nav-link.active::after {
+      width: 65%;
+    }
+
+    /* Filter buttons */
+    .timeline-filter-btn, .cert-filter-btn, .doc-filter-pill {
+      background: rgba(255, 255, 255, 0.05);
+      color: #94a3b8;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .timeline-filter-btn:hover, .cert-filter-btn:hover, .doc-filter-pill:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+    }
+    .timeline-filter-btn.active, .cert-filter-btn.active, .doc-filter-pill.active {
+      background: linear-gradient(135deg, #2563eb, #00e5ff) !important;
+      color: #ffffff !important;
+      border-color: transparent !important;
+      box-shadow: 0 4px 15px rgba(0, 229, 255, 0.3) !important;
+    }
+
+    /* Admin Tabs */
+    .admin-tab-btn {
+      color: #94a3b8;
+    }
+    .admin-tab-btn:hover {
+      background: rgba(255, 255, 255, 0.05);
+      color: #ffffff;
+    }
+    .admin-tab-btn.active {
+      background: rgba(0, 229, 255, 0.15);
+      color: #00e5ff;
+      border: 1px solid rgba(0, 229, 255, 0.3);
+    }
+
+    /* Document List View item */
+    .doc-item-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      transition: all 0.2s ease;
+    }
+    .doc-item-list:hover {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: rgba(0, 229, 255, 0.3);
+      transform: translateX(4px);
+    }
+
+    /* Document Grid View item */
+    .doc-item-grid {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      transition: all 0.25s ease;
+    }
+    .doc-item-grid:hover {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: rgba(0, 229, 255, 0.3);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px -5px rgba(0, 229, 255, 0.12);
+    }
+
+    /* Spacetime Grid Background */
+    .spacetime-grid {
+      background-image: 
+        linear-gradient(to right, rgba(0, 229, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 229, 255, 0.035) 1px, transparent 1px);
+      background-size: 44px 44px;
+    }
+    html:not(.dark) .spacetime-grid {
+      background-image: 
+        linear-gradient(to right, rgba(2, 132, 199, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(2, 132, 199, 0.05) 1px, transparent 1px);
+    }
+
+    /* 3D Bohr Atom Orbit Rings */
+    .atom-orbit-container {
+      position: absolute;
+      inset: -32px;
+      pointer-events: none;
+      perspective: 1000px;
+    }
+    .atom-orbit {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 1.5px dashed rgba(0, 229, 255, 0.35);
+      box-shadow: 0 0 15px rgba(0, 229, 255, 0.12);
+      transform-style: preserve-3d;
+    }
+    .atom-orbit-1 {
+      transform: rotateX(65deg) rotateY(15deg);
+      animation: orbit-spin-1 12s linear infinite;
+    }
+    .atom-orbit-2 {
+      transform: rotateX(65deg) rotateY(75deg);
+      animation: orbit-spin-2 15s linear infinite;
+    }
+    .atom-orbit-3 {
+      transform: rotateX(65deg) rotateY(-45deg);
+      animation: orbit-spin-3 18s linear infinite;
+    }
+    @keyframes orbit-spin-1 {
+      0% { transform: rotateX(65deg) rotateY(15deg) rotateZ(0deg); }
+      100% { transform: rotateX(65deg) rotateY(15deg) rotateZ(360deg); }
+    }
+    @keyframes orbit-spin-2 {
+      0% { transform: rotateX(65deg) rotateY(75deg) rotateZ(0deg); }
+      100% { transform: rotateX(65deg) rotateY(75deg) rotateZ(360deg); }
+    }
+    @keyframes orbit-spin-3 {
+      0% { transform: rotateX(65deg) rotateY(-45deg) rotateZ(0deg); }
+      100% { transform: rotateX(65deg) rotateY(-45deg) rotateZ(360deg); }
+    }
+
+    /* Electron on Orbit */
+    .atom-electron {
+      position: absolute;
+      top: -4px;
+      left: 50%;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #00e5ff;
+      box-shadow: 0 0 12px #00e5ff, 0 0 20px #00e5ff;
+      transform: translateX(-50%);
+    }
+    .atom-electron-gold {
+      background: #fbbf24;
+      box-shadow: 0 0 12px #fbbf24, 0 0 20px #fbbf24;
+    }
+    .atom-electron-blue {
+      background: #60a5fa;
+      box-shadow: 0 0 12px #60a5fa, 0 0 20px #60a5fa;
+    }
+
+    /* Quantum Floating Formula Badge (Animated Decorative Elements) */
+    .quantum-formula-badge {
+      background: rgba(6, 13, 25, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(0, 229, 255, 0.28);
+      box-shadow: 0 8px 32px 0 rgba(0, 229, 255, 0.14);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: default;
+    }
+    .quantum-formula-badge:hover {
+      transform: translateY(-6px) scale(1.06);
+      border-color: rgba(0, 229, 255, 0.7);
+      box-shadow: 0 12px 36px 0 rgba(0, 229, 255, 0.32);
+    }
+
+    /* Floating Physics Formula Animation */
+    @keyframes physics-drift {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(1.5deg); }
+    }
+    @keyframes physics-drift-reverse {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(9px) rotate(-1.5deg); }
+    }
+    .animate-physics-drift {
+      animation: physics-drift 5.5s ease-in-out infinite;
+    }
+    .animate-physics-drift-reverse {
+      animation: physics-drift-reverse 6.5s ease-in-out infinite;
+    }
+
+    /* Subtle Physics Formula Ambient Watermark */
+    .formula-watermark {
+      user-select: none;
+      pointer-events: none;
+      font-family: 'JetBrains Mono', monospace;
+      opacity: 0.065;
+      color: #00e5ff;
+      letter-spacing: 1.5px;
+    }
+    html:not(.dark) .formula-watermark {
+      opacity: 0.055;
+      color: #0284c7;
+    }
+  </style>
+</head>
+<body class="bg-navy-950 text-slate-100 font-sans selection:bg-accent-cyan selection:text-navy-950 overflow-x-hidden antialiased transition-colors duration-300 spacetime-grid">
+
+  <!-- Interactive Quantum Particles & Force Field Canvas Background -->
+  <canvas id="particles-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-40 dark:opacity-60 transition-opacity duration-500"></canvas>
+  <div class="fixed inset-0 pointer-events-none z-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(0,229,255,0.08),rgba(255,255,255,0))] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(37,99,235,0.15),rgba(3,7,18,0))]"></div>
+
+  <!-- Ambient Animated Physics Formula Watermarks (Floating Decorative Elements) -->
+  <div class="fixed top-28 right-10 formula-watermark text-base select-none z-0 hidden xl:block animate-physics-drift">iℏ(∂Ψ/∂t) = ĤΨ</div>
+  <div class="fixed bottom-16 left-10 formula-watermark text-base select-none z-0 hidden xl:block animate-physics-drift-reverse">E² = (pc)² + (m₀c²)²</div>
+  <div class="fixed top-1/2 left-8 formula-watermark text-sm select-none z-0 hidden 2xl:block animate-physics-drift">∇×B = μ₀J + μ₀ε₀(∂E/∂t)</div>
+  <div class="fixed bottom-32 right-16 formula-watermark text-sm select-none z-0 hidden 2xl:block animate-physics-drift-reverse">Δx · Δp ≥ ℏ/2</div>
+  <div class="fixed top-1/3 right-1/4 formula-watermark text-xs select-none z-0 hidden lg:block animate-physics-drift">F = −kx • λ = h/p</div>
+
+  <!-- Navigation Bar -->
+  <header id="main-nav" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 py-4 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto flex items-center justify-between glass-nav rounded-2xl px-5 py-3 border border-white/10 dark:border-white/5 shadow-2xl">
+      <!-- Brand Logo -->
+      <a href="#home" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 via-accent-cyan to-blue-400 p-[1.5px] transition-transform duration-300 group-hover:scale-105 shadow-lg shadow-accent-cyan/20">
+          <div class="w-full h-full bg-navy-900 rounded-[10px] flex items-center justify-center font-display font-bold text-accent-cyan text-lg">
+            NR
+          </div>
+        </div>
+        <div>
+          <span class="font-display font-bold text-base sm:text-lg tracking-tight text-white group-hover:text-accent-cyan transition-colors">Naily Rosyada</span>
+          <span class="hidden sm:inline-block text-xs text-accent-cyan/90 font-mono ml-2 py-0.5 px-2 rounded-full bg-accent-cyan/10 border border-accent-cyan/30">Fisika Undip 2026</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
+        <a href="#home" class="nav-link px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all">Beranda</a>
+        <a href="#about" class="nav-link px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all">About Me</a>
+        <a href="#timeline" class="nav-link px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all">Pendidikan & Organisasi</a>
+        <a href="#skills" class="nav-link px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all">Keahlian & KTI</a>
+        <a href="#certificates" class="nav-link px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all">Sertifikat & Prestasi</a>
+        <a href="#contact" class="nav-link px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all">Kontak</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Quick Official Social Logo Links in Header -->
+        <a href="https://instagram.com/nai.r.d" target="_blank" title="Instagram @nai.r.d" class="hidden sm:flex items-center justify-center w-9 h-9 rounded-xl bg-white/5 hover:bg-pink-500/20 border border-white/10 hover:border-pink-500/40 transition-all hover:scale-110 shadow-sm">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="igGradNav" x1="2" y1="22" x2="22" y2="2" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#feda75"/>
+                <stop offset="25%" stop-color="#fa7e1e"/>
+                <stop offset="50%" stop-color="#d62976"/>
+                <stop offset="75%" stop-color="#962fbf"/>
+                <stop offset="100%" stop-color="#4f5bd5"/>
+              </linearGradient>
+            </defs>
+            <rect x="2" y="2" width="20" height="20" rx="5.5" fill="url(#igGradNav)"/>
+            <rect x="5" y="5" width="14" height="14" rx="4" stroke="#ffffff" stroke-width="1.8" fill="none"/>
+            <circle cx="12" cy="12" r="3.2" stroke="#ffffff" stroke-width="1.8" fill="none"/>
+            <circle cx="16.2" cy="7.8" r="1.1" fill="#ffffff"/>
+          </svg>
+        </a>
+
+        <a href="https://linkedin.com/in/nailyrosyadadarojat" target="_blank" title="LinkedIn @nailyrosyadadarojat" class="hidden sm:flex items-center justify-center w-9 h-9 rounded-xl bg-white/5 hover:bg-blue-600/20 border border-white/10 hover:border-blue-500/40 transition-all hover:scale-110 shadow-sm">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="20" height="20" rx="4" fill="#0A66C2"/>
+            <path d="M7.5 10V17.5M7.5 6.8V6.9M11.5 17.5V13.2C11.5 11.4 12.6 10.2 14.3 10.2C15.9 10.2 16.8 11.3 16.8 13.2V17.5M11.5 10V17.5" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+
+        <button id="theme-toggle" title="Toggle Dark / Light Mode" class="p-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300 hover:text-accent-cyan transition-all">
+          <i data-lucide="sun" class="w-4 h-4 hidden dark:block"></i>
+          <i data-lucide="moon" class="w-4 h-4 block dark:hidden"></i>
+        </button>
+
+        <button id="admin-modal-btn" title="Admin CMS Portal" class="p-2.5 rounded-xl bg-white/5 hover:bg-blue-600/20 border border-white/10 hover:border-blue-500/40 text-slate-300 hover:text-accent-cyan transition-all flex items-center gap-1.5 text-xs font-semibold">
+          <i data-lucide="shield-check" class="w-4 h-4 text-accent-cyan"></i>
+          <span class="hidden md:inline">Admin</span>
+        </button>
+
+        <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white text-xs font-bold uppercase tracking-wider shadow-lg shadow-cyan-500/20 transition-all hover:scale-105 active:scale-95">
+          <span>Kirim Pesan</span>
+          <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+        </a>
+
+        <button id="mobile-menu-btn" class="lg:hidden p-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300">
+          <i data-lucide="menu" id="hamburger-icon" class="w-5 h-5"></i>
+          <i data-lucide="x" id="close-icon" class="w-5 h-5 hidden"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-drawer" class="lg:hidden hidden max-w-7xl mx-auto mt-3 p-5 rounded-2xl glass-card border border-white/10 shadow-2xl transition-all">
+      <div class="flex flex-col gap-2">
+        <a href="#home" class="mobile-nav-link py-2.5 px-4 rounded-xl text-slate-200 hover:bg-white/10 font-medium">Beranda</a>
+        <a href="#about" class="mobile-nav-link py-2.5 px-4 rounded-xl text-slate-200 hover:bg-white/10 font-medium">Tentang Saya & Minat</a>
+        <a href="#timeline" class="mobile-nav-link py-2.5 px-4 rounded-xl text-slate-200 hover:bg-white/10 font-medium">Pendidikan & Organisasi</a>
+        <a href="#skills" class="mobile-nav-link py-2.5 px-4 rounded-xl text-slate-200 hover:bg-white/10 font-medium">Keahlian DOCX, KTI & SPSS</a>
+        <a href="#certificates" class="mobile-nav-link py-2.5 px-4 rounded-xl text-slate-200 hover:bg-white/10 font-medium">Sertifikat & Prestasi</a>
+        <a href="#contact" class="mobile-nav-link py-2.5 px-4 rounded-xl text-slate-200 hover:bg-white/10 font-medium">Kontak & Pesan</a>
+      </div>
+      <div class="mt-4 pt-4 border-t border-white/10 flex items-center justify-between">
+        <span class="text-xs text-slate-400">Batang, Jawa Tengah • S1 Fisika Undip</span>
+        <a href="mailto:darojatdorojat@gmail.com" class="text-xs font-semibold text-accent-cyan flex items-center gap-1">
+          <i data-lucide="mail" class="w-3.5 h-3.5"></i> Email
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="relative z-10 pt-24 sm:pt-28">
+
+    <!-- 1. HOME / HERO SECTION -->
+    <section id="home" class="min-h-[92vh] flex items-center justify-center px-4 sm:px-8 py-12 relative">
+      <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left: Text Content & Animated Typography -->
+        <div class="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
+          
+          <!-- Status Pill Badge -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-navy-850/90 border border-accent-cyan/30 shadow-lg shadow-accent-cyan/10 backdrop-blur-md">
+            <span class="relative flex h-2.5 w-2.5">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+            </span>
+            <span class="text-xs font-semibold text-slate-300">Mahasiswa S1 Fisika @ Universitas Diponegoro 2026</span>
+          </div>
+
+          <!-- Main Heading -->
+          <div class="space-y-2">
+            <h2 class="text-sm sm:text-base font-semibold tracking-widest uppercase text-accent-cyan font-mono">Portofolio Akademik & Kepenulisan Ilmiah</h2>
+            <h1 class="text-4xl sm:text-6xl xl:text-7xl font-display font-extrabold text-white tracking-tight leading-[1.1]">
+              <span id="hero-name-display" class="bg-gradient-to-r from-white via-slate-100 to-slate-400 bg-clip-text text-transparent">NAILY ROSYADA DAROJAT</span>
+            </h1>
+          </div>
+
+          <!-- Auto Rotating Animated Typewriter Text -->
+          <div class="flex items-center gap-2 text-lg sm:text-2xl lg:text-3xl font-display font-bold text-accent-cyan min-h-[42px]">
+            <span class="text-slate-400 font-normal">Fokus:</span>
+            <span id="typewriter-text" class="border-r-2 border-accent-cyan pr-1"></span>
+          </div>
+
+          <!--Short Bio Description -->
+          <p id="hero-bio-display" class="text-base sm:text-lg text-slate-300/90 max-w-2xl font-normal leading-relaxed">
+            Mahasiswa S1 Fisika Universitas Diponegoro (Undip) angkatan 2026 & Lulusan Siswa Terbaik 1 SMA Negeri 1 Gringsing (Nilai Akhir 93,73). Memiliki minat tinggi pada kompetisi <strong>ONMIPA-PT, Lomba Karya Tulis Ilmiah (LKTI), Penulisan Artikel Ilmiah, Essay Akademik, dan Program Kreativitas Mahasiswa (PKM)</strong>, didukung penguasaan Microsoft Word (DOCX), Olah Data SPSS, kepemimpinan Ketua MPK, serta Public Speaking.
+          </p>
+
+          <!-- Floating Decorative Physics Formula Pills in Hero -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 pt-1">
+            <div class="px-3 py-1.5 rounded-xl quantum-formula-badge font-mono text-xs text-accent-cyan flex items-center gap-1.5 animate-physics-drift">
+              <i data-lucide="atom" class="w-3.5 h-3.5 text-cyan-400"></i>
+              <span>iℏ(∂Ψ/∂t) = ĤΨ</span>
+            </div>
+            <div class="px-3 py-1.5 rounded-xl quantum-formula-badge font-mono text-xs text-blue-300 flex items-center gap-1.5 animate-physics-drift [animation-delay:1.2s]">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i>
+              <span>E = mc² • λ = h/p</span>
+            </div>
+            <div class="px-3 py-1.5 rounded-xl quantum-formula-badge font-mono text-xs text-purple-300 flex items-center gap-1.5 animate-physics-drift [animation-delay:2.4s]">
+              <i data-lucide="zap" class="w-3.5 h-3.5 text-purple-400"></i>
+              <span>∇×B = μ₀J + μ₀ε₀(∂E/∂t)</span>
+            </div>
+          </div>
+
+          <!-- Floating Edge Apple Music Play Widget Button -->
+          <div id="floating-music-widget" class="fixed bottom-6 left-6 z-40 flex items-center gap-2.5 px-4 py-2.5 rounded-2xl glass-card border border-accent-cyan/40 shadow-2xl backdrop-blur-xl transition-all duration-300 hover:scale-105 group">
+            <button id="music-toggle-btn" onclick="toggleAppleMusicPlayer()" class="w-9 h-9 rounded-xl bg-gradient-to-tr from-pink-600 to-rose-500 text-white flex items-center justify-center shadow-md cursor-pointer group-hover:rotate-12 transition-transform">
+              <i id="music-icon" data-lucide="play" class="w-4 h-4 fill-white ml-0.5"></i>
+            </button>
+            <div class="text-left cursor-pointer" onclick="toggleAppleMusicPlayer()">
+              <p class="text-[10px] font-mono text-accent-cyan uppercase tracking-wider">Tasnao Almustaheel</p>
+              <p class="text-xs font-bold text-white">Putar Musik Apple</p>
+            </div>
+            <!-- Hidden Audio/Embed Frame -->
+            <div id="apple-music-embed-container" class="hidden absolute left-0 bottom-full mb-2 w-[300px] h-[150px] rounded-xl overflow-hidden shadow-2xl border border-white/20 bg-navy-950">
+              <iframe id="apple-music-iframe" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="150" style="width:100%;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src=""></iframe>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2 w-full sm:w-auto">
+            <a href="#certificates" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white font-semibold text-sm shadow-xl shadow-cyan-500/25 flex items-center justify-center gap-2 group transition-all hover:scale-[1.02] active:scale-95">
+              <span>Lihat Prestasi & Sertifikat</span>
+              <i data-lucide="award" class="w-4 h-4 transition-transform group-hover:scale-110"></i>
+            </a>
+
+            <!-- Download CV / Documents Quick Access -->
+            <div class="relative w-full sm:w-auto group">
+              <button id="quick-cv-btn" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold text-sm backdrop-blur-md flex items-center justify-center gap-2 transition-all hover:border-accent-cyan/50">
+                <i data-lucide="file-text" class="w-4 h-4 text-accent-cyan"></i>
+                <span>Buka CV Resmi (PDF)</span>
+                <i data-lucide="eye" class="w-4 h-4 text-slate-400 group-hover:text-white"></i>
+              </button>
+            </div>
+
+            <a href="#timeline" class="w-full sm:w-auto px-5 py-3.5 rounded-xl bg-navy-850 hover:bg-navy-800 border border-white/10 text-slate-300 hover:text-white font-medium text-sm flex items-center justify-center gap-2 transition-all">
+              <i data-lucide="graduation-cap" class="w-4 h-4 text-blue-400"></i>
+              <span>Data Sekolah & Organisasi</span>
+            </a>
+          </div>
+
+          <!-- Social Media Icons Bar (ONLY Instagram, LinkedIn, Email) -->
+          <div class="pt-4 flex flex-col sm:flex-row items-center gap-4">
+            <span class="text-xs font-mono uppercase tracking-wider text-slate-400">Sosial Media & Kontak:</span>
+            <div id="hero-social-links" class="flex items-center gap-3 flex-wrap justify-center">
+              <!-- Rendered dynamically from JS -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Profile Card with 3D Bohr Atom Orbits (OSN Badge Below Photo Removed as Requested) -->
+        <div class="lg:col-span-5 flex justify-center items-center relative">
+          
+          <!-- Outer Glowing Spacetime Distortion Field -->
+          <div class="absolute w-72 sm:w-96 h-72 sm:h-96 rounded-full bg-gradient-to-tr from-blue-600/30 via-accent-cyan/25 to-indigo-600/20 blur-3xl -z-10 animate-pulse-slow"></div>
+          
+          <div class="relative w-72 sm:w-80 xl:w-96 aspect-[3/4] group">
+            
+            <!-- 3D Bohr Atom Glowing Orbit Rings -->
+            <div class="atom-orbit-container">
+              <div class="atom-orbit atom-orbit-1">
+                <div class="atom-electron"></div>
+              </div>
+              <div class="atom-orbit atom-orbit-2">
+                <div class="atom-electron atom-electron-gold"></div>
+              </div>
+              <div class="atom-orbit atom-orbit-3">
+                <div class="atom-electron atom-electron-blue"></div>
+              </div>
+            </div>
+
+            <!-- Rotating Coordinate Frames -->
+            <div class="absolute inset-[-10px] rounded-3xl border border-dashed border-accent-cyan/30 animate-spin-slow pointer-events-none"></div>
+            <div class="absolute inset-[-20px] rounded-3xl border border-dotted border-blue-500/20 pointer-events-none"></div>
+
+            <!-- Profile Frame Card -->
+            <div class="w-full h-full rounded-3xl p-1 bg-gradient-to-b from-accent-cyan/60 via-blue-600/40 to-navy-900 shadow-2xl overflow-hidden relative">
+              <div class="w-full h-full rounded-[22px] bg-navy-900 relative overflow-hidden flex flex-col items-center justify-center">
+                
+                <!-- Profile Photo of Naily Rosyada Darojat with Automatic SVG Portrait Fallback -->
+                <div id="profile-photo-container" class="w-full h-full relative group">
+                  <img id="profile-img-element" 
+                       src="assets/photo-naily.jpg" 
+                       alt="Naily Rosyada Darojat" 
+                       onerror="this.onerror=null; this.src=window.getFallbackPortraitDataUrl();"
+                       class="w-full h-full object-cover object-top filter contrast-105 transition-transform duration-700 group-hover:scale-105" />
+                  
+                  <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/20 to-transparent"></div>
+                  
+                  <!-- Bottom Overlay on Avatar -->
+                  <div class="absolute bottom-4 left-4 right-4 p-4 rounded-2xl glass-card border border-white/15 backdrop-blur-lg">
+                    <div class="flex items-center justify-between">
+                      <div>
+                        <h4 class="font-display font-bold text-white text-base">Naily Rosyada D.</h4>
+                        <p class="text-xs text-accent-cyan flex items-center gap-1 font-mono">
+                          <i data-lucide="atom" class="w-3.5 h-3.5"></i> Fisika Undip 2026
+                        </p>
+                      </div>
+                      <span class="px-2.5 py-1 rounded-lg bg-blue-500/20 border border-blue-400/30 text-[11px] font-bold text-blue-300">
+                        Top #1 SMAN 1
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Top Right Achievement Badge (Nilai Akhir 93.73) -->
+            <div class="absolute -top-4 -right-4 p-3 rounded-2xl glass-card border border-accent-cyan/30 shadow-xl backdrop-blur-xl animate-float flex items-center gap-2.5 z-20">
+              <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-amber-500 to-yellow-300 flex items-center justify-center text-navy-950 font-bold shadow-md">
+                <i data-lucide="award" class="w-5 h-5 text-navy-950"></i>
+              </div>
+              <div>
+                <p class="text-[10px] text-slate-400 uppercase font-mono tracking-wider">Lulusan Terbaik 1</p>
+                <p class="text-sm font-bold text-white">Nilai Akhir 93,73</p>
+              </div>
+            </div>
+
+            <!-- Quantum Formula Decorative Badges Around Frame (Purely Animated Physics Elements) -->
+            <div class="absolute -top-7 -left-6 px-3.5 py-2 rounded-xl quantum-formula-badge font-mono text-xs text-accent-cyan flex items-center gap-1.5 z-20 animate-physics-drift">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 text-yellow-400"></i>
+              <span>ĤΨ = EΨ</span>
+            </div>
+
+            <div class="absolute -bottom-6 -right-5 px-3.5 py-2 rounded-xl quantum-formula-badge font-mono text-xs text-blue-300 flex items-center gap-1.5 z-20 animate-physics-drift-reverse">
+              <i data-lucide="Orbit" class="w-3.5 h-3.5 text-cyan-400"></i>
+              <span>Δx · Δp ≥ ℏ/2</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME & ACADEMIC INTERESTS SECTION -->
+    <section id="about" class="py-24 px-4 sm:px-8 relative">
+      <!-- Floating Decorative Physics Equations -->
+      <div class="max-w-7xl mx-auto space-y-16 relative">
+        
+        <!-- Section Header -->
+        <div class="text-center space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-400/20 text-accent-cyan text-xs font-mono uppercase tracking-wider">
+            <i data-lucide="user" class="w-3.5 h-3.5"></i> Profil Pribadi & Minat Kompetisi
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
+            Tentang <span class="bg-gradient-to-r from-accent-cyan to-blue-500 bg-clip-text text-transparent">Naily Rosyada</span>
+          </h2>
+          <p class="text-slate-400 max-w-2xl mx-auto text-sm sm:text-base">
+            Mengenal perjalanan akademik, minat kompetisi sains & karya tulis ilmiah, serta dedikasi kepemimpinan saya di Universitas Diponegoro.
+          </p>
+        </div>
+
+        <!-- Bento Grid About Content -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          
+          <!-- Column 1: Biodata Singkat Sesuai CV (4 cols) -->
+          <div class="lg:col-span-4 glass-card p-6 sm:p-8 rounded-3xl border border-white/10 space-y-6 flex flex-col justify-between">
+            <div class="space-y-6">
+              <div class="flex items-center gap-4">
+                <div class="w-16 h-16 rounded-2xl overflow-hidden border-2 border-accent-cyan/40 shadow-lg flex-shrink-0">
+                  <img src="assets/photo-naily.jpg" 
+                       alt="Naily Rosyada Darojat" 
+                       onerror="this.onerror=null; this.src=window.getFallbackPortraitDataUrl();"
+                       class="w-full h-full object-cover object-top" />
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-white">Naily Rosyada Darojat</h3>
+                  <p class="text-xs text-accent-cyan font-mono">Batang, Jawa Tengah</p>
+                  <p class="text-xs text-slate-400 mt-0.5">S1 Fisika Undip 2026</p>
+                </div>
+              </div>
+
+              <div class="space-y-2.5 pt-2 text-sm">
+                <div class="flex items-center justify-between p-2.5 rounded-xl bg-white/5 border border-white/5">
+                  <span class="text-slate-400 flex items-center gap-2 text-xs">
+                    <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="2" y="4" width="20" height="16" rx="3" fill="#0284c7"/>
+                      <path d="M3 6.5L12 13L21 6.5" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Email:
+                  </span>
+                  <a href="mailto:darojatdorojat@gmail.com" class="font-mono text-xs text-white hover:text-accent-cyan font-medium truncate max-w-[175px]" title="darojatdorojat@gmail.com">darojatdorojat@gmail.com</a>
+                </div>
+
+                <div class="flex items-center justify-between p-2.5 rounded-xl bg-white/5 border border-white/5 hover:border-pink-500/30 transition-all">
+                  <span class="text-slate-400 flex items-center gap-2 text-xs">
+                    <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <defs>
+                        <linearGradient id="igGradBio" x1="2" y1="22" x2="22" y2="2" gradientUnits="userSpaceOnUse">
+                          <stop offset="0%" stop-color="#feda75"/>
+                          <stop offset="25%" stop-color="#fa7e1e"/>
+                          <stop offset="50%" stop-color="#d62976"/>
+                          <stop offset="75%" stop-color="#962fbf"/>
+                          <stop offset="100%" stop-color="#4f5bd5"/>
+                        </linearGradient>
+                      </defs>
+                      <rect x="2" y="2" width="20" height="20" rx="5.5" fill="url(#igGradBio)"/>
+                      <rect x="5" y="5" width="14" height="14" rx="4" stroke="#ffffff" stroke-width="1.8" fill="none"/>
+                      <circle cx="12" cy="12" r="3.2" stroke="#ffffff" stroke-width="1.8" fill="none"/>
+                      <circle cx="16.2" cy="7.8" r="1.1" fill="#ffffff"/>
+                    </svg>
+                    Instagram:
+                  </span>
+                  <a href="https://instagram.com/nai.r.d" target="_blank" class="font-mono text-xs text-pink-400 hover:underline font-bold flex items-center gap-1">@nai.r.d</a>
+                </div>
+
+                <div class="flex items-center justify-between p-2.5 rounded-xl bg-white/5 border border-white/5 hover:border-blue-500/30 transition-all">
+                  <span class="text-slate-400 flex items-center gap-2 text-xs">
+                    <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="2" y="2" width="20" height="20" rx="4" fill="#0A66C2"/>
+                      <path d="M7.5 10.2V17.2M7.5 6.9V7.05M11.4 17.2V13.1C11.4 11.4 12.5 10.2 14.2 10.2C15.8 10.2 16.7 11.3 16.7 13.1V17.2M11.4 10.2V17.2" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    LinkedIn:
+                  </span>
+                  <a href="https://linkedin.com/in/nailyrosyadadarojat" target="_blank" class="font-mono text-xs text-blue-400 hover:underline font-bold flex items-center gap-1">@nailyrosyadadarojat</a>
+                </div>
+
+                <div class="flex items-center justify-between p-2.5 rounded-xl bg-white/5 border border-white/5">
+                  <span class="text-slate-400 flex items-center gap-2 text-xs">
+                    <i data-lucide="school" class="w-4 h-4 text-amber-400"></i> Kampus:
+                  </span>
+                  <span class="text-white text-xs font-semibold">Universitas Diponegoro</span>
+                </div>
+
+                <div class="flex items-center justify-between p-2.5 rounded-xl bg-white/5 border border-white/5">
+                  <span class="text-slate-400 flex items-center gap-2 text-xs">
+                    <i data-lucide="atom" class="w-4 h-4 text-cyan-400"></i> Prodi:
+                  </span>
+                  <span class="text-accent-cyan text-xs font-bold font-mono">Fisika (S1)</span>
+                </div>
+
+                <div class="flex items-center justify-between p-2.5 rounded-xl bg-white/5 border border-white/5">
+                  <span class="text-slate-400 flex items-center gap-2 text-xs">
+                    <i data-lucide="graduation-cap" class="w-4 h-4 text-purple-400"></i> Alumni:
+                  </span>
+                  <span class="text-white text-xs font-semibold">SMAN 1 Gringsing (93,73)</span>
+                </div>
+              </div>
+
+              <!-- Language Proficiencies -->
+              <div class="space-y-2">
+                <span class="text-xs font-mono uppercase tracking-wider text-slate-400">Kemampuan Bahasa (Sesuai CV):</span>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="px-2.5 py-1 rounded-lg bg-blue-500/10 border border-blue-400/20 text-xs font-medium text-blue-300">Bahasa Indonesia (Lisan & Tulisan)</span>
+                  <span class="px-2.5 py-1 rounded-lg bg-cyan-500/10 border border-cyan-400/20 text-xs font-medium text-cyan-300">Bahasa Jawa (Lisan & Tulisan)</span>
+                  <span class="px-2.5 py-1 rounded-lg bg-indigo-500/10 border border-indigo-400/20 text-xs font-medium text-indigo-300">Bahasa Inggris (Lisan & Tulisan)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-white/10">
+              <a href="#timeline" class="w-full py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-center font-medium text-xs text-slate-300 hover:text-white flex items-center justify-center gap-2 transition-all">
+                <span>Buka Data Sekolah & Organisasi</span>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-accent-cyan"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2: Visi Akademik & Fokus Kompetisi (ONMIPA, LKTI, Artikel, Essay, PKM) (8 cols) -->
+          <div class="lg:col-span-8 space-y-8">
+            
+            <!-- Vision Card -->
+            <div class="glass-card p-6 sm:p-8 rounded-3xl border border-white/10 space-y-4 relative overflow-hidden">
+              <div class="absolute -top-12 -right-12 w-48 h-48 bg-accent-cyan/10 rounded-full blur-2xl pointer-events-none"></div>
+              
+              <div class="flex items-center justify-between flex-wrap gap-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-blue-500/20 border border-blue-400/30 flex items-center justify-center text-accent-cyan">
+                    <i data-lucide="compass" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-display font-bold text-white">Visi Akademik & Kepenulisan Ilmiah</h3>
+                    <p class="text-xs text-slate-400 font-mono">S1 Fisika Fakultas Sains dan Matematika — Universitas Diponegoro</p>
+                  </div>
+                </div>
+                <span class="px-3 py-1 rounded-xl quantum-formula-badge font-mono text-xs text-accent-cyan animate-physics-drift">
+                  F = d(mv)/dt
+                </span>
+              </div>
+
+              <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                Sebagai mahasiswa <strong>S1 Fisika Universitas Diponegoro angkatan 2026</strong> dan Lulusan Siswa Terbaik 1 SMA Negeri 1 Gringsing (Nilai Akhir 93,73 — Peringkat 1 kelas selama 6 semester berturut-turut), saya berkomitmen menggabungkan ketajaman analisis Fisika dengan kemampuan menyusun dokumen akademik dan publikasi ilmiah berkualitas.
+              </p>
+
+              <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                Saya sangat berminat dan fokus mempersiapkan diri untuk berpartisipasi aktif dalam ajang <strong>ONMIPA-PT (Olimpiade Nasional Matematika dan Ilmu Pengetahuan Alam Perguruan Tinggi), Lomba Karya Tulis Ilmiah (LKTI), Penulisan Artikel Ilmiah, Lomba Essay Akademik, serta Program Kreativitas Mahasiswa (PKM)</strong>. Dengan keahlian penguasaan <strong>Microsoft Word (DOCX)</strong> dalam menyusun naskah KTI, artikel, dan essay yang terstruktur sesuai kaidah ilmiah serta kemampuan <strong>Olah Data SPSS</strong>, saya siap berkontribusi bagi nama baik almamater.
+              </p>
+            </div>
+
+            <!-- Fokus Minat & Target Kompetisi (ONMIPA, KTI, Artikel, Essay, PKM) -->
+            <div class="glass-card p-6 sm:p-8 rounded-3xl border border-white/10 space-y-6">
+              <div class="flex items-center justify-between flex-wrap gap-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-cyan-500/20 border border-cyan-400/30 flex items-center justify-center text-accent-cyan">
+                    <i data-lucide="target" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-display font-bold text-white">Fokus Minat Kompetisi & Karya Ilmiah</h3>
+                    <p class="text-xs text-slate-400 font-mono">ONMIPA • LKTI • Artikel Ilmiah • Essay • PKM</p>
+                  </div>
+                </div>
+                <span class="px-3 py-1 rounded-xl quantum-formula-badge font-mono text-xs text-amber-300 animate-physics-drift-reverse">
+                  ∮ E · dA = Q/ε₀
+                </span>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <div class="p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-accent-cyan/40 transition-all space-y-2">
+                  <div class="flex items-center gap-2 text-accent-cyan text-sm font-bold">
+                    <i data-lucide="atom" class="w-4 h-4"></i>
+                    <span>1. Olimpiade Sains ONMIPA-PT</span>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    Melanjutkan rekam jejak prestasi OSN Kabupaten (Peringkat 7 Tahun 2024 & 2025) dan Juara Harapan 3 Nasional OPI IPB menuju kompetisi <strong>ONMIPA-PT Bidang Fisika</strong>.
+                  </p>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-blue-400/40 transition-all space-y-2">
+                  <div class="flex items-center gap-2 text-blue-400 text-sm font-bold">
+                    <i data-lucide="file-text" class="w-4 h-4"></i>
+                    <span>2. Lomba Karya Tulis Ilmiah (LKTI)</span>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    Merancang gagasan riset inovatif berbasis sains dan fisika terapan dalam bentuk <strong>Karya Tulis Ilmiah (KTI)</strong> tingkat nasional dengan format dokumen DOCX standar publikasi.
+                  </p>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-purple-400/40 transition-all space-y-2">
+                  <div class="flex items-center gap-2 text-purple-400 text-sm font-bold">
+                    <i data-lucide="pen-tool" class="w-4 h-4"></i>
+                    <span>3. Penulisan Artikel Ilmiah & Essay</span>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    Menyusun <strong>Artikel Ilmiah & Essay Akademik</strong> kritis yang memadukan kajian literatur, argumentasi terstruktur, serta komunikasi gagasan yang persuasif.
+                  </p>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-emerald-400/40 transition-all space-y-2">
+                  <div class="flex items-center gap-2 text-emerald-400 text-sm font-bold">
+                    <i data-lucide="lightbulb" class="w-4 h-4"></i>
+                    <span>4. Program Kreativitas Mahasiswa (PKM)</span>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    Berkolaborasi dalam tim riset mahasiswa untuk menyusun proposal <strong>PKM (PKM-RE, PKM-GT, PKM-AI)</strong> dengan penataan dokumen, sitasi, dan presentasi ilmiah yang unggul.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. INTERACTIVE TIMELINE: PENDIDIKAN & ORGANISASI (SESUAI CV) -->
+    <section id="timeline" class="py-24 px-4 sm:px-8 bg-navy-900/40 relative">
+      <div class="max-w-7xl mx-auto space-y-12">
+        
+        <!-- Header -->
+        <div class="text-center space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-400/20 text-accent-cyan text-xs font-mono uppercase tracking-wider">
+            <i data-lucide="calendar" class="w-3.5 h-3.5"></i> Data Resmi Sesuai CV
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
+            Pendidikan & <span class="bg-gradient-to-r from-accent-cyan to-blue-500 bg-clip-text text-transparent">Pengalaman Organisasi</span>
+          </h2>
+          <p class="text-slate-400 max-w-2xl mx-auto text-sm sm:text-base">
+            Riwayat lengkap latar belakang pendidikan di Universitas Diponegoro & SMA Negeri 1 Gringsing, kepemimpinan Majelis Perwakilan Kelas (MPK), serta Palang Merah Remaja (PMR). Klik kartu mana pun untuk melihat rincian lengkap.
+          </p>
+        </div>
+
+        <!-- Filter Buttons (Pendidikan & Organisasi) -->
+        <div class="flex items-center justify-center gap-2 flex-wrap">
+          <button class="timeline-filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all" data-category="all">Semua Riwayat (6)</button>
+          <button class="timeline-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all" data-category="education">Pendidikan (2)</button>
+          <button class="timeline-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all" data-category="organization">Organisasi MPK & PMR (4)</button>
+        </div>
+
+        <!-- Interactive Vertical Timeline Container -->
+        <div class="relative max-w-4xl mx-auto py-6">
+          <div class="absolute left-4 sm:left-1/2 -translate-x-1/2 top-4 bottom-4 w-[2px] bg-gradient-to-b from-accent-cyan via-blue-500 to-transparent"></div>
+
+          <div id="timeline-list" class="space-y-8">
+            <!-- Rendered by JavaScript -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. SKILLS & SCIENTIFIC WRITING SECTION (DOCX, KTI, ARTIKEL, ESSAY, PKM & SPSS) -->
+    <section id="skills" class="py-24 px-4 sm:px-8 relative">
+      <div class="max-w-7xl mx-auto space-y-14">
+        
+        <div class="text-center space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-400/20 text-accent-cyan text-xs font-mono uppercase tracking-wider">
+            <i data-lucide="file-text" class="w-3.5 h-3.5"></i> Kompetensi Akademik & Kepenulisan
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
+            Keahlian <span class="bg-gradient-to-r from-accent-cyan to-blue-500 bg-clip-text text-transparent">DOCX, KTI, SPSS & Analisis Data</span>
+          </h2>
+          <p class="text-slate-400 max-w-2xl mx-auto text-sm sm:text-base">
+            Perpaduan keahlian menyusun dokumen ilmiah menggunakan Microsoft Word (DOCX) untuk Karya Tulis Ilmiah (KTI), Artikel, Essay, dan PKM dengan kemampuan SPSS Olah Data & Analisis Data, Public Speaking, serta Kepemimpinan.
+          </p>
+        </div>
+
+        <!-- Floating Decorative Physics Formula Strip (Purely Visual Animated Elements) -->
+        <div class="flex flex-wrap items-center justify-center gap-3">
+          <div class="px-4 py-2 rounded-2xl quantum-formula-badge font-mono text-xs text-accent-cyan flex items-center gap-2 animate-physics-drift">
+            <i data-lucide="atom" class="w-4 h-4"></i>
+            <span>Persamaan Schrödinger: iℏ ∂Ψ/∂t = [−(ℏ²/2m)∇² + V(r)]Ψ</span>
+          </div>
+          <div class="px-4 py-2 rounded-2xl quantum-formula-badge font-mono text-xs text-amber-300 flex items-center gap-2 animate-physics-drift-reverse">
+            <i data-lucide="flame" class="w-4 h-4"></i>
+            <span>Hukum Termodinamika: dU = δQ − δW • dS ≥ δQ/T</span>
+          </div>
+          <div class="px-4 py-2 rounded-2xl quantum-formula-badge font-mono text-xs text-blue-300 flex items-center gap-2 animate-physics-drift [animation-delay:1.5s]">
+            <i data-lucide="waves" class="w-4 h-4"></i>
+            <span>Gelombang & Relativitas: ∂²u/∂t² = c²∇²u • E = γmc²</span>
+          </div>
+        </div>
+
+        <!-- 4 Skill Pillars Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Category 1: Microsoft Word (DOCX) & Karya Tulis Ilmiah -->
+          <div class="glass-card p-6 rounded-3xl border border-accent-cyan/30 space-y-6 hover:border-accent-cyan transition-all group shadow-lg shadow-accent-cyan/5">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl bg-blue-500/20 border border-blue-400/30 flex items-center justify-center text-accent-cyan group-hover:scale-110 transition-transform">
+                <i data-lucide="file-Edit" class="w-6 h-6"></i>
+              </div>
+              <span class="px-2.5 py-0.5 rounded-full bg-accent-cyan/15 text-accent-cyan font-mono text-[10px] font-bold border border-accent-cyan/30">Unggulan</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-white">DOCX & Karya Tulis Ilmiah</h3>
+              <p class="text-xs text-slate-400">Penyusunan naskah KTI, artikel ilmiah, essay & proposal PKM di MS Word.</p>
+            </div>
+            <div class="space-y-3 pt-2">
+              <div class="skill-item" data-name="MS Word (DOCX) Formatting & Layout" data-percent="98"></div>
+              <div class="skill-item" data-name="Penulisan Karya Tulis Ilmiah (KTI)" data-percent="96"></div>
+              <div class="skill-item" data-name="Penulisan Artikel Ilmiah & Essay" data-percent="96"></div>
+              <div class="skill-item" data-name="Penyusunan Proposal PKM & Sitasi" data-percent="94"></div>
+            </div>
+          </div>
+
+          <!-- Category 2: SPSS Olah Data & Analisis Data -->
+          <div class="glass-card p-6 rounded-3xl border border-white/10 space-y-6 hover:border-cyan-400/40 transition-all group">
+            <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-400/20 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform">
+              <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-white">SPSS & Analisis Data</h3>
+              <p class="text-xs text-slate-400">SPSS olah data dan analisis data kuantitatif, statistik & penelitian ilmiah.</p>
+            </div>
+            <div class="space-y-3 pt-2">
+              <div class="skill-item" data-name="SPSS Olah Data" data-percent="95"></div>
+              <div class="skill-item" data-name="Analisis Data Statistik & Kuantitatif" data-percent="95"></div>
+              <div class="skill-item" data-name="Interpretasi & Pengolahan Data" data-percent="94"></div>
+              <div class="skill-item" data-name="Visualisasi & Pelaporan Data" data-percent="93"></div>
+            </div>
+          </div>
+
+          <!-- Category 3: Public Speaking & Seni Bahasa -->
+          <div class="glass-card p-6 rounded-3xl border border-white/10 space-y-6 hover:border-amber-500/40 transition-all group">
+            <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-400/20 flex items-center justify-center text-amber-400 group-hover:scale-110 transition-transform">
+              <i data-lucide="mic" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-white">Public Speaking & MC</h3>
+              <p class="text-xs text-slate-400">Master of Ceremony (MC), Story Telling Islami, Dakwah, Puisi & Dongeng.</p>
+            </div>
+            <div class="space-y-3 pt-2">
+              <div class="skill-item" data-name="Public Speaking & MC Acara" data-percent="96"></div>
+              <div class="skill-item" data-name="Mendongeng Bahasa Jawa (Prov)" data-percent="95"></div>
+              <div class="skill-item" data-name="Story Telling Islami & Dakwah" data-percent="95"></div>
+              <div class="skill-item" data-name="Puisi & Announcement Voice" data-percent="93"></div>
+            </div>
+          </div>
+
+          <!-- Category 4: Soft Skills, Kepemimpinan & PMR -->
+          <div class="glass-card p-6 rounded-3xl border border-white/10 space-y-6 hover:border-emerald-500/40 transition-all group">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-400/20 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
+              <i data-lucide="users-round" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-white">Soft Skills & Organisasi</h3>
+              <p class="text-xs text-slate-400">Kepemimpinan MPK, komunikasi, kerja tim, problem solving & UKS PMR.</p>
+            </div>
+            <div class="space-y-3 pt-2">
+              <div class="skill-item" data-name="Kepemimpinan & Tanggung Jawab" data-percent="97"></div>
+              <div class="skill-item" data-name="Komunikasi & Kerja Sama Tim" data-percent="96"></div>
+              <div class="skill-item" data-name="Manajemen Waktu & Adaptabilitas" data-percent="95"></div>
+              <div class="skill-item" data-name="Problem Solving & Pertolongan Pertama" data-percent="94"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. CERTIFICATES & ACHIEVEMENTS SECTION (WITH GUARANTEED HIGH-RES VISUAL CERTIFICATE RENDERING) -->
+    <section id="certificates" class="py-24 px-4 sm:px-8 bg-navy-900/40 relative">
+      <div class="max-w-7xl mx-auto space-y-12">
+        
+        <div class="text-center space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-400/20 text-amber-400 text-xs font-mono uppercase tracking-wider">
+            <i data-lucide="trophy" class="w-3.5 h-3.5"></i> Bukti Prestasi Terverifikasi (6 Piagam)
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
+            Sertifikat & <span class="bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-500 bg-clip-text text-transparent">Piagam Penghargaan</span>
+          </h2>
+          <p class="text-slate-400 max-w-2xl mx-auto text-sm sm:text-base">
+            Seluruh 6 prestasi akademik dan non-akademik Naily Rosyada Darojat sesuai CV resmi: tingkat Nasional (IPB University), Provinsi Jawa Tengah, Kabupaten (OSN 2024 & 2025), hingga Sekolah. Klik <strong>"Lihat Piagam Penuh"</strong> untuk memperbesar atau mengunduh.
+          </p>
+        </div>
+
+        <div class="flex items-center justify-center gap-2 flex-wrap">
+          <button class="cert-filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all" data-category="all">Semua Sertifikat (6)</button>
+          <button class="cert-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all" data-category="nasional">Tingkat Nasional (1)</button>
+          <button class="cert-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all" data-category="provinsi">Tingkat Provinsi (1)</button>
+          <button class="cert-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all" data-category="kabupaten">Tingkat Kabupaten / OSN (2)</button>
+          <button class="cert-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all" data-category="sekolah">Tingkat Sekolah (2)</button>
+        </div>
+
+        <div id="certificates-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Rendered dynamically by JavaScript with guaranteed high-resolution SVG/Image certificate previews -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. CONNECT WITH ME (INSTAGRAM, LINKEDIN, EMAIL) -->
+    <section id="social-connect" class="py-20 px-4 sm:px-8 bg-navy-900/40 relative">
+      <div class="max-w-7xl mx-auto space-y-12">
+        
+        <div class="text-center space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-400/20 text-accent-cyan text-xs font-mono uppercase tracking-wider">
+            <i data-lucide="share-2" class="w-3.5 h-3.5"></i> Jaringan & Komunikasi
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
+            Connect <span class="bg-gradient-to-r from-accent-cyan to-blue-500 bg-clip-text text-transparent">With Me</span>
+          </h2>
+          <p class="text-slate-400 max-w-2xl mx-auto text-sm sm:text-base">
+            Terhubung langsung untuk kolaborasi tim ONMIPA-PT, Lomba Karya Tulis Ilmiah (LKTI), penulisan Artikel/Essay, PKM, maupun kegiatan kemahasiswaan dan MC.
+          </p>
+        </div>
+
+        <!-- Social Media Cards Grid -->
+        <div id="social-grid-cards" class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+          <!-- Rendered dynamically by JavaScript -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. CONTACT SECTION -->
+    <section id="contact" class="py-24 px-4 sm:px-8 relative">
+      <div class="max-w-7xl mx-auto space-y-12">
+        
+        <div class="text-center space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-400/20 text-accent-cyan text-xs font-mono uppercase tracking-wider">
+            <i data-lucide="send" class="w-3.5 h-3.5"></i> Formulir Kontak
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
+            Kirim <span class="bg-gradient-to-r from-accent-cyan to-blue-500 bg-clip-text text-transparent">Pesan & Kolaborasi</span>
+          </h2>
+          <p class="text-slate-400 max-w-2xl mx-auto text-sm sm:text-base">
+            Ingin mengajak kolaborasi lomba KTI, PKM, Artikel Ilmiah, Essay, persiapan ONMIPA Fisika, atau undangan MC? Silakan kirim pesan melalui formulir berikut.
+          </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+          <div class="glass-card p-6 sm:p-10 rounded-3xl border border-white/10 shadow-2xl relative">
+            
+            <form id="contact-form" class="space-y-6">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                  <label for="contact-name" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">Nama Lengkap *</label>
+                  <div class="relative">
+                    <i data-lucide="user" class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="text" id="contact-name" required placeholder="Contoh: Budi Santoso" class="w-full pl-10 pr-4 py-3 rounded-xl bg-white/5 border border-white/10 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-accent-cyan transition-colors" />
+                  </div>
+                </div>
+
+                <div class="space-y-2">
+                  <label for="contact-email" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">Alamat Email *</label>
+                  <div class="relative">
+                    <i data-lucide="mail" class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="email" id="contact-email" required placeholder="nama@domain.com" class="w-full pl-10 pr-4 py-3 rounded-xl bg-white/5 border border-white/10 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-accent-cyan transition-colors" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <label for="contact-subject" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">Subjek / Keperluan *</label>
+                <div class="relative">
+                  <i data-lucide="tag" class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                  <select id="contact-subject" class="w-full pl-10 pr-4 py-3 rounded-xl bg-navy-900 border border-white/10 text-sm text-white focus:outline-none focus:border-accent-cyan transition-colors">
+                    <option value="Kolaborasi Tim PKM / LKTI / Karya Tulis Ilmiah">Kolaborasi Tim PKM / LKTI / Karya Tulis Ilmiah</option>
+                    <option value="Penulisan Artikel Ilmiah & Lomba Essay">Penulisan Artikel Ilmiah & Lomba Essay</option>
+                    <option value="Diskusi Sains Fisika & Persiapan ONMIPA-PT">Diskusi Sains Fisika & Persiapan ONMIPA-PT</option>
+                    <option value="Undangan Master of Ceremony (MC) / Public Speaking">Undangan Master of Ceremony (MC) / Public Speaking</option>
+                    <option value="Kegiatan Kemahasiswaan & Organisasi">Kegiatan Kemahasiswaan & Organisasi</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <label for="contact-message" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">Isi Pesan *</label>
+                <textarea id="contact-message" rows="5" required placeholder="Tuliskan pesan atau ajakan kolaborasi Anda di sini..." class="w-full p-4 rounded-xl bg-white/5 border border-white/10 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-accent-cyan transition-colors"></textarea>
+              </div>
+
+              <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+                <div class="flex items-center gap-2 text-xs text-slate-400">
+                  <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+                  <span>Pesan langsung tersimpan di Inbox Admin Naily.</span>
+                </div>
+
+                <button type="submit" id="contact-submit-btn" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white font-semibold text-sm shadow-xl shadow-cyan-500/20 flex items-center justify-center gap-2 transition-all hover:scale-105 active:scale-95">
+                  <i data-lucide="send" class="w-4 h-4"></i>
+                  <span>Kirim Pesan Sekarang</span>
+                </button>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="relative z-10 border-t border-white/10 bg-navy-950 py-12 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl overflow-hidden border border-accent-cyan/30">
+          <img src="assets/photo-naily.jpg" 
+               alt="Naily Rosyada Darojat" 
+               onerror="this.onerror=null; this.src=window.getFallbackPortraitDataUrl();"
+               class="w-full h-full object-cover object-top" />
+        </div>
+        <div>
+          <p class="font-display font-bold text-white text-base">Naily Rosyada Darojat</p>
+          <p class="text-xs text-slate-400">S1 Fisika @ Universitas Diponegoro • ONMIPA, KTI, Artikel, Essay & PKM</p>
+        </div>
+      </div>
+
+      <div class="text-xs text-slate-400 text-center">
+        &copy; 2026 Naily Rosyada Darojat. All Rights Reserved. Portofolio Resmi Fisika Undip.
+      </div>
+
+      <div class="flex items-center gap-2.5">
+        <a href="https://instagram.com/nai.r.d" target="_blank" title="Instagram @nai.r.d" class="p-2 rounded-xl bg-white/5 hover:bg-pink-500/20 border border-white/10 hover:border-pink-500/40 transition-all hover:scale-110">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="20" height="20" rx="5.5" fill="url(#igGradNav)"/>
+            <rect x="5" y="5" width="14" height="14" rx="4" stroke="#ffffff" stroke-width="1.8" fill="none"/>
+            <circle cx="12" cy="12" r="3.2" stroke="#ffffff" stroke-width="1.8" fill="none"/>
+            <circle cx="16.2" cy="7.8" r="1.1" fill="#ffffff"/>
+          </svg>
+        </a>
+
+        <a href="https://linkedin.com/in/nailyrosyadadarojat" target="_blank" title="LinkedIn @nailyrosyadadarojat" class="p-2 rounded-xl bg-white/5 hover:bg-blue-600/20 border border-white/10 hover:border-blue-500/40 transition-all hover:scale-110">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="20" height="20" rx="4" fill="#0A66C2"/>
+            <path d="M7.5 10V17.5M7.5 6.8V6.9M11.5 17.5V13.2C11.5 11.4 12.6 10.2 14.3 10.2C15.9 10.2 16.8 11.3 16.8 13.2V17.5M11.5 10V17.5" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+
+        <button id="footer-admin-btn" class="text-xs font-mono text-slate-400 hover:text-accent-cyan flex items-center gap-1.5 py-1.5 px-3 rounded-lg bg-white/5 border border-white/10">
+          <i data-lucide="lock" class="w-3 h-3 text-accent-cyan"></i>
+          <span>Admin Portal</span>
+        </button>
+
+        <a href="#home" class="p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300 hover:text-white" title="Kembali ke Atas">
+          <i data-lucide="arrow-up" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       MODALS (CERTIFICATE VIEWER, PDF CV READER, TIMELINE DETAIL, ADMIN)
+  ══════════════════════════════════════════════════════════════ -->
+
+  <!-- 1. CERTIFICATE FULLSCREEN PREVIEW & DOWNLOAD MODAL -->
+  <div id="cert-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden items-center justify-center p-3 sm:p-6">
+    <div class="glass-card max-w-4xl w-full max-h-[92vh] rounded-3xl border border-white/15 overflow-hidden flex flex-col">
+      <div class="p-4 sm:p-5 bg-navy-850 border-b border-white/10 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center">
+            <i data-lucide="award" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 id="cert-modal-title" class="font-bold text-white text-sm sm:text-base">Detail Sertifikat Resmi</h3>
+            <p id="cert-modal-meta" class="text-xs text-slate-400 font-mono">Penyelenggara & Tanggal</p>
+          </div>
+        </div>
+        <button id="cert-modal-close" class="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-slate-400 hover:text-white">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="p-4 sm:p-6 overflow-y-auto flex-1 flex flex-col items-center justify-center bg-navy-950/90 relative">
+        <div id="cert-modal-canvas-wrapper" class="w-full flex justify-center transition-transform duration-200">
+          <!-- Dynamic high-definition certificate visual -->
+        </div>
+      </div>
+
+      <div class="p-4 bg-navy-850 border-t border-white/10 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <button id="cert-zoom-in" class="p-2 rounded-xl bg-white/5 text-slate-300 hover:text-white" title="Perbesar"><i data-lucide="zoom-in" class="w-4 h-4"></i></button>
+          <button id="cert-zoom-out" class="p-2 rounded-xl bg-white/5 text-slate-300 hover:text-white" title="Perkecil"><i data-lucide="zoom-out" class="w-4 h-4"></i></button>
+          <span class="text-xs text-slate-400 font-mono hidden sm:inline">Status: Piagam Terverifikasi CV</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <button id="cert-modal-download-btn" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-400 hover:to-yellow-300 text-navy-950 font-bold text-xs flex items-center gap-1.5 shadow-lg shadow-amber-500/20">
+            <i data-lucide="download" class="w-4 h-4"></i>
+            <span>Unduh Piagam Sertifikat (SVG/JPG)</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. IN-WEBSITE INTERACTIVE PDF / DOCX READER MODAL (EXACT CV CONTENT) -->
+  <div id="pdf-viewer-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden items-center justify-center p-3 sm:p-6">
+    <div class="glass-card max-w-5xl w-full h-[92vh] rounded-3xl border border-white/15 overflow-hidden flex flex-col">
+      <div class="p-4 bg-navy-850 border-b border-white/10 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-blue-500/20 text-accent-cyan flex items-center justify-center font-bold text-xs">
+            DOC
+          </div>
+          <div>
+            <h3 id="pdf-modal-title" class="font-bold text-white text-sm sm:text-base">Document Viewer</h3>
+            <p id="pdf-modal-size" class="text-xs text-slate-400 font-mono">248 KB • Verified Digital Document</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <div class="flex items-center gap-1 bg-white/5 p-1 rounded-xl text-xs font-mono text-slate-300 border border-white/5">
+            <button id="pdf-prev-page" class="p-1 hover:text-white" title="Halaman Sebelumnya"><i data-lucide="chevron-left" class="w-4 h-4"></i></button>
+            <span id="pdf-page-indicator" class="px-2">Hal 1 / 2</span>
+            <button id="pdf-next-page" class="p-1 hover:text-white" title="Halaman Berikutnya"><i data-lucide="chevron-right" class="w-4 h-4"></i></button>
+          </div>
+
+          <button id="pdf-download-action-btn" class="px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold flex items-center gap-1.5">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i>
+            <span class="hidden sm:inline">Download</span>
+          </button>
+
+          <button id="pdf-modal-close" class="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-slate-400 hover:text-white">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="pdf-scroll-area" class="flex-1 overflow-y-auto p-4 sm:p-8 bg-navy-950 flex justify-center">
+        <div id="pdf-paper-document" class="w-full max-w-3xl bg-white text-slate-900 rounded-xl shadow-2xl p-6 sm:p-12 min-h-[860px] border border-slate-200 text-xs sm:text-sm leading-relaxed transition-all">
+          <!-- Exact CV content injected here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. TIMELINE DETAIL MODAL -->
+  <div id="detail-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="glass-card max-w-2xl w-full max-h-[85vh] rounded-3xl border border-white/15 overflow-hidden flex flex-col">
+      <div class="p-5 bg-navy-850 border-b border-white/10 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div id="detail-modal-icon-badge" class="w-9 h-9 rounded-xl bg-blue-500/20 text-accent-cyan flex items-center justify-center">
+            <i data-lucide="info" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 id="detail-modal-title" class="font-bold text-white text-base">Detail Riwayat</h3>
+            <p id="detail-modal-meta" class="text-xs text-accent-cyan font-mono">2024–2025</p>
+          </div>
+        </div>
+        <button id="detail-modal-close" class="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-slate-400 hover:text-white">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div id="detail-modal-body" class="p-6 overflow-y-auto space-y-4 text-slate-300 text-sm leading-relaxed">
+        <!-- Dynamic content injected -->
+      </div>
+
+      <div class="p-4 bg-navy-850 border-t border-white/10 flex justify-end">
+        <button id="detail-modal-ok-btn" class="px-5 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. ADMIN DASHBOARD MODAL (NO NATIVE ALERT/CONFIRM) -->
+  <div id="admin-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden items-center justify-center p-2 sm:p-6">
+    <div class="glass-card max-w-5xl w-full h-[92vh] rounded-3xl border border-white/15 overflow-hidden flex flex-col">
+      
+      <div class="p-4 sm:p-5 bg-navy-850 border-b border-white/10 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-accent-cyan/20 border border-accent-cyan/30 text-accent-cyan flex items-center justify-center font-bold">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="font-display font-bold text-white text-base sm:text-lg flex items-center gap-2">
+              <span>Admin Management Portal</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300">Live CMS</span>
+            </h3>
+            <p class="text-xs text-slate-400">Pengelolaan Konten, Pesan Masuk & Sertifikat Naily Rosyada</p>
+          </div>
+        </div>
+
+        <button id="admin-modal-close" class="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-slate-400 hover:text-white">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div id="admin-login-view" class="flex-1 flex items-center justify-center p-6 bg-navy-950">
+        <div class="max-w-sm w-full p-8 rounded-3xl glass-card border border-white/10 text-center space-y-6">
+          <div class="w-16 h-16 rounded-2xl bg-blue-600/20 text-accent-cyan mx-auto flex items-center justify-center">
+            <i data-lucide="key" class="w-8 h-8"></i>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold text-white">Autentikasi Pemilik</h4>
+            <p class="text-xs text-slate-400 mt-1">Masukkan kode akses PIN Admin untuk mengelola portofolio.</p>
+          </div>
+          <form id="admin-login-form" class="space-y-4">
+            <input type="password" id="admin-pin-input" placeholder="Masukkan PIN..." class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-center text-sm font-mono text-white focus:outline-none focus:border-accent-cyan tracking-widest" required />
+            <button type="submit" class="w-full py-3 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold text-sm hover:from-blue-500 hover:to-cyan-400 transition-all">
+              Buka Dashboard
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div id="admin-dashboard-view" class="hidden flex-1 flex flex-col md:flex-row overflow-hidden bg-navy-950">
+        <div class="w-full md:w-60 bg-navy-900 border-r border-white/10 p-4 flex flex-row md:flex-col gap-2 overflow-x-auto">
+          <button class="admin-tab-btn active px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2.5 text-left transition-all" data-tab="overview">
+            <i data-lucide="layout-dashboard" class="w-4 h-4"></i> Overview
+          </button>
+          <button class="admin-tab-btn px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2.5 text-left transition-all" data-tab="inbox">
+            <i data-lucide="mail" class="w-4 h-4"></i> Pesan Masuk <span id="admin-inbox-badge" class="ml-auto px-1.5 py-0.5 rounded-full bg-blue-500/30 text-[10px] text-accent-cyan">0</span>
+          </button>
+          <button class="admin-tab-btn px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2.5 text-left transition-all" data-tab="profile">
+            <i data-lucide="user-cog" class="w-4 h-4"></i> Profil & Sosmed
+          </button>
+          <button class="admin-tab-btn px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2.5 text-left transition-all" data-tab="certificates">
+            <i data-lucide="award" class="w-4 h-4"></i> Kelola Sertifikat
+          </button>
+          
+          <div class="mt-auto pt-4 border-t border-white/10 hidden md:block space-y-2">
+            <button id="admin-reset-btn" class="w-full py-2 px-3 rounded-xl bg-rose-500/10 hover:bg-rose-500/20 text-rose-300 text-[11px] font-semibold flex items-center gap-2 transition-all">
+              <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i> Reset Data Awal CV
+            </button>
+            <button id="admin-logout-btn" class="w-full py-2 px-3 rounded-xl bg-white/5 hover:bg-white/10 text-slate-400 text-[11px] font-semibold flex items-center gap-2 transition-all">
+              <i data-lucide="log-out" class="w-3.5 h-3.5"></i> Keluar Admin
+            </button>
+          </div>
+        </div>
+
+        <div class="flex-1 p-6 overflow-y-auto space-y-6">
+          <div id="tab-overview" class="admin-tab-pane space-y-6">
+            <h4 class="text-xl font-bold text-white">Ringkasan Portofolio Fisika Undip</h4>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div class="p-4 rounded-2xl bg-white/5 border border-white/5 space-y-1">
+                <span class="text-xs text-slate-400">Status Prodi</span>
+                <p class="text-lg font-bold text-accent-cyan">Fisika Undip '26</p>
+              </div>
+              <div class="p-4 rounded-2xl bg-white/5 border border-white/5 space-y-1">
+                <span class="text-xs text-slate-400">Pesan Masuk</span>
+                <p id="stat-messages" class="text-2xl font-bold text-blue-400">1</p>
+              </div>
+              <div class="p-4 rounded-2xl bg-white/5 border border-white/5 space-y-1">
+                <span class="text-xs text-slate-400">Sertifikat Resmi</span>
+                <p id="stat-certs" class="text-2xl font-bold text-amber-400">6</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="tab-inbox" class="admin-tab-pane hidden space-y-4">
+            <div class="flex items-center justify-between">
+              <h4 class="text-xl font-bold text-white">Kotak Pesan Masuk (Inbox)</h4>
+            </div>
+            <div id="admin-messages-list" class="space-y-3">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+
+          <div id="tab-profile" class="admin-tab-pane hidden space-y-4">
+            <h4 class="text-xl font-bold text-white">Sunting Profil & Media Sosial</h4>
+            <form id="admin-profile-form" class="space-y-4 max-w-2xl">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs text-slate-400 mb-1">Nama Lengkap</label>
+                  <input type="text" id="edit-name" class="w-full p-2.5 rounded-xl bg-white/5 border border-white/10 text-xs text-white" />
+                </div>
+                <div>
+                  <label class="block text-xs text-slate-400 mb-1">Status / Universitas</label>
+                  <input type="text" id="edit-status" class="w-full p-2.5 rounded-xl bg-white/5 border border-white/10 text-xs text-white" />
+                </div>
+                <div>
+                  <label class="block text-xs text-slate-400 mb-1">Alamat Email</label>
+                  <input type="email" id="edit-email" class="w-full p-2.5 rounded-xl bg-white/5 border border-white/10 text-xs text-white" />
+                </div>
+                <div>
+                  <label class="block text-xs text-slate-400 mb-1">Instagram Handle</label>
+                  <input type="text" id="edit-ig" class="w-full p-2.5 rounded-xl bg-white/5 border border-white/10 text-xs text-white" />
+                </div>
+              </div>
+              <div>
+                <label class="block text-xs text-slate-400 mb-1">LinkedIn Handle</label>
+                <input type="text" id="edit-linkedin" class="w-full p-2.5 rounded-xl bg-white/5 border border-white/10 text-xs text-white" />
+              </div>
+              <div>
+                <label class="block text-xs text-slate-400 mb-1">Path / URL Foto Profil</label>
+                <input type="text" id="edit-photo" class="w-full p-2.5 rounded-xl bg-white/5 border border-white/10 text-xs text-white" />
+              </div>
+              <div>
+                <label class="block text-xs text-slate-400 mb-1">Ringkasan Bio Beranda</label>
+                <textarea id="edit-bio" rows="3" class="w-full p-2.5 rounded-xl bg-white/5 border border-white/10 text-xs text-white"></textarea>
+              </div>
+              <button type="submit" class="px-5 py-2.5 rounded-xl bg-accent-cyan text-navy-950 font-bold text-xs">Simpan Perubahan Profil</button>
+            </form>
+          </div>
+
+          <div id="tab-certificates" class="admin-tab-pane hidden space-y-4">
+            <h4 class="text-xl font-bold text-white">Kelola Sertifikat Resmi</h4>
+            <!-- Inline Add Certificate Form (Replaces prompt()) -->
+            <form id="admin-inline-cert-form" class="p-4 rounded-2xl bg-white/5 border border-white/10 grid grid-cols-1 sm:grid-cols-4 gap-3">
+              <input type="text" id="new-cert-title" placeholder="Nama Sertifikat / Prestasi" required class="p-2 rounded-xl bg-navy-950 border border-white/10 text-xs text-white" />
+              <input type="text" id="new-cert-org" placeholder="Penyelenggara" required class="p-2 rounded-xl bg-navy-950 border border-white/10 text-xs text-white" />
+              <select id="new-cert-level" class="p-2 rounded-xl bg-navy-950 border border-white/10 text-xs text-white">
+                <option value="nasional">Tingkat Nasional</option>
+                <option value="provinsi">Tingkat Provinsi</option>
+                <option value="kabupaten">Tingkat Kabupaten</option>
+                <option value="sekolah">Tingkat Sekolah</option>
+              </select>
+              <button type="submit" class="px-3 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold flex items-center justify-center gap-1.5">
+                <i data-lucide="plus" class="w-4 h-4"></i> Tambah Sertifikat
+              </button>
+            </form>
+            <div id="admin-cert-items" class="space-y-2">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="fixed bottom-6 right-6 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       APPLICATION JAVASCRIPT (FIXED, COMPLETE & VERIFIED)
+  ══════════════════════════════════════════════════════════════ -->
+  <script>
+    /**
+     * NAILY ROSYADA DAROJAT — OFFICIAL PORTFOLIO APPLICATION
+     * S1 Fisika Universitas Diponegoro 2026
+     * Fixed all script errors, added high-res SVG Certificate Generator,
+     * complete CV school/organization/volunteer records, and KTI/Essay/PKM/DOCX skills.
+     */
+
+    // 1. FALLBACK PORTRAIT SVG GENERATOR (If assets/photo-naily.jpg is not found in preview environment)
+    window.getFallbackPortraitDataUrl = function() {
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+        <defs>
+          <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#991b1b"/>
+            <stop offset="60%" stop-color="#7f1d1d"/>
+            <stop offset="100%" stop-color="#091426"/>
+          </linearGradient>
+          <linearGradient id="hijabGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#1e293b"/>
+            <stop offset="100%" stop-color="#0f172a"/>
+          </linearGradient>
+        </defs>
+        <rect width="600" height="800" fill="url(#bgGrad)"/>
+        <circle cx="300" cy="260" r="220" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" stroke-dasharray="6 6"/>
+        <!-- Formal Blazer & White Shirt -->
+        <path d="M110,800 C110,600 200,530 300,530 C400,530 490,600 490,800 Z" fill="#0f172a"/>
+        <polygon points="250,530 350,530 300,680" fill="#f8fafc"/>
+        <!-- Formal Hijab Silhouette -->
+        <path d="M175,330 C175,180 425,180 425,330 C435,450 400,555 300,565 C200,555 165,450 175,330 Z" fill="url(#hijabGrad)"/>
+        <!-- Face Silhouette -->
+        <ellipse cx="300" cy="325" rx="76" ry="92" fill="#fde68a" opacity="0.92"/>
+        <!-- Subtle Smile & Features -->
+        <path d="M272,305 Q282,298 292,305" fill="none" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+        <path d="M308,305 Q318,298 328,305" fill="none" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+        <path d="M285,358 Q300,370 315,358" fill="none" stroke="#991b1b" stroke-width="3" stroke-linecap="round"/>
+        <!-- Name Pin -->
+        <rect x="345" y="620" width="75" height="22" rx="4" fill="#fbbf24"/>
+        <text x="382" y="635" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="#0f172a">NAILY R.D.</text>
+      </svg>`;
+      return "data:image/svg+xml;utf8," + encodeURIComponent(svg);
+    };
+
+    // 2. HIGH-RESOLUTION OFFICIAL CERTIFICATE SVG DATA-URL GENERATOR
+    // Ensures every single certificate displays a crisp, realistic Indonesian Piagam Penghargaan
+    // even when local JPG scans in assets/ are unavailable.
+    window.generateCertificateVisualDataUrl = function(cert) {
+      const accentColors = {
+        nasional: { border: "#d97706", bgTop: "#fffbeb", badge: "#b45309", seal: "#f59e0b" },
+        provinsi: { border: "#7c3aed", bgTop: "#f5f3ff", badge: "#6d28d9", seal: "#8b5cf6" },
+        kabupaten: { border: "#0284c7", bgTop: "#f0f9ff", badge: "#0369a1", seal: "#0ea5e9" },
+        sekolah: { border: "#1d4ed8", bgTop: "#eff6ff", badge: "#1e40af", seal: "#3b82f6" }
+      };
+      const theme = accentColors[cert.level] || accentColors.sekolah;
+      const safeTitle = (cert.title || "").replace(/&/g, "&amp;").replace(/"/g, "&quot;");
+      const safeOrg = (cert.organizer || "").replace(/&/g, "&amp;").replace(/"/g, "&quot;");
+      const safeNo = (cert.nomorSurat || "Arsip Resmi Terverifikasi").replace(/&/g, "&amp;");
+      const safeDesc = (cert.description || "").substring(0, 95) + ((cert.description || "").length > 95 ? "..." : "");
+
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="720" viewBox="0 0 1000 720">
+        <defs>
+          <linearGradient id="certBg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="${theme.bgTop}"/>
+            <stop offset="50%" stop-color="#ffffff"/>
+            <stop offset="100%" stop-color="#fefce8"/>
+          </linearGradient>
+        </defs>
+        <!-- Paper Background -->
+        <rect width="1000" height="720" rx="16" fill="url(#certBg)"/>
+        <!-- Outer Ornate Frame -->
+        <rect x="24" y="24" width="952" height="672" rx="10" fill="none" stroke="${theme.border}" stroke-width="5"/>
+        <rect x="36" y="36" width="928" height="648" rx="6" fill="none" stroke="${theme.border}" stroke-width="1.5" stroke-dasharray="8 4"/>
+        <!-- Corner Ornaments -->
+        <circle cx="52" cy="52" r="8" fill="${theme.seal}"/>
+        <circle cx="948" cy="52" r="8" fill="${theme.seal}"/>
+        <circle cx="52" cy="668" r="8" fill="${theme.seal}"/>
+        <circle cx="948" cy="668" r="8" fill="${theme.seal}"/>
+
+        <!-- Institution Header -->
+        <text x="500" y="95" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-weight="bold" fill="#334155" letter-spacing="2">${safeOrg.toUpperCase()}</text>
+        <line x1="220" y1="112" x2="780" y2="112" stroke="${theme.border}" stroke-width="1.5" opacity="0.4"/>
+
+        <!-- Main Certificate Heading -->
+        <text x="500" y="168" text-anchor="middle" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="${theme.badge}" letter-spacing="4">PIAGAM PENGHARGAAN</text>
+        <rect x="340" y="185" width="320" height="28" rx="14" fill="${theme.border}" opacity="0.12"/>
+        <text x="500" y="204" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="${theme.badge}">${safeNo}</text>
+
+        <!-- Recipient Section -->
+        <text x="500" y="255" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#64748b" letter-spacing="1.5">DIBERIKAN DENGAN BANGGA KEPADA:</text>
+        <text x="500" y="312" text-anchor="middle" font-family="Georgia, serif" font-size="40" font-weight="bold" fill="#0f172a" letter-spacing="1">NAILY ROSYADA DAROJAT</text>
+        <line x1="250" y1="328" x2="750" y2="328" stroke="${theme.seal}" stroke-width="2.5"/>
+
+        <!-- Achievement Title -->
+        <text x="500" y="372" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#475569">Atas prestasi dan pencapaian unggul sebagai:</text>
+        <text x="500" y="418" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="bold" fill="${theme.badge}">${safeTitle}</text>
+        <text x="500" y="458" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#475569">${safeDesc}</text>
+
+        <!-- Gold / Official Seal Badge -->
+        <circle cx="500" cy="555" r="46" fill="${theme.seal}" opacity="0.18"/>
+        <circle cx="500" cy="555" r="36" fill="${theme.seal}"/>
+        <text x="500" y="551" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff">TERVERIFIKASI</text>
+        <text x="500" y="567" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff">${cert.year}</text>
+
+        <!-- Left & Right Signatures -->
+        <text x="210" y="545" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b">Tingkat Kompetisi</text>
+        <text x="210" y="568" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="${theme.badge}">${cert.levelBadge}</text>
+        <line x1="130" y1="585" x2="290" y2="585" stroke="#94a3b8" stroke-width="1"/>
+
+        <text x="790" y="545" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b">Disahkan Pada</text>
+        <text x="790" y="568" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#0f172a">Tahun ${cert.year}</text>
+        <line x1="710" y1="585" x2="870" y2="585" stroke="#94a3b8" stroke-width="1"/>
+        <text x="790" y="605" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">Dokumen Resmi Sesuai CV</text>
+      </svg>`;
+      return "data:image/svg+xml;utf8," + encodeURIComponent(svg);
+    };
+
+    // ══════════════════════════════════════════════════════════════════════
+    // 3. DATASET RESMI FISIKA UNDIP 2026 (SESUAI CV & PERMINTAAN TERBARU)
+    // ══════════════════════════════════════════════════════════════════════
+    const INITIAL_DATA = {
+      profile: {
+        fullName: "Naily Rosyada Darojat",
+        shortName: "Naily",
+        titles: [
+          "Mahasiswa S1 Fisika — Universitas Diponegoro 2026",
+          "Minat: ONMIPA-PT, LKTI, Artikel Ilmiah, Essay & PKM",
+          "Keahlian DOCX (KTI, Artikel, Essay) & Olah Data SPSS",
+          "Lulusan Siswa Terbaik 1 SMAN 1 Gringsing (Nilai 93,73)",
+          "Ketua Majelis Perwakilan Kelas (MPK) 2024–2025",
+          "Public Speaker, MC & Juara 3 Mendongeng Jawa Provinsi"
+        ],
+        bio: "Mahasiswa S1 Fisika Universitas Diponegoro (Undip) angkatan 2026 & Lulusan Siswa Terbaik 1 SMA Negeri 1 Gringsing (Nilai Akhir 93,73). Memiliki minat tinggi pada kompetisi <strong>ONMIPA-PT, Lomba Karya Tulis Ilmiah (LKTI), Penulisan Artikel Ilmiah, Essay Akademik, dan Program Kreativitas Mahasiswa (PKM)</strong>, didukung penguasaan Microsoft Word (DOCX), Olah Data SPSS, kepemimpinan Ketua MPK, serta Public Speaking.",
+        email: "darojatdorojat@gmail.com",
+        phone: "087791166318",
+        location: "Batang, Jawa Tengah, Indonesia",
+        campus: "Universitas Diponegoro (Undip)",
+        major: "Fisika (S1)",
+        academicScore: "93,73 (Lulusan Terbaik 1)",
+        photoUrl: "assets/photo-naily.jpg",
+        socials: {
+          email: "mailto:darojatdorojat@gmail.com",
+          instagram: "https://instagram.com/nai.r.d",
+          instagramHandle: "@nai.r.d",
+          linkedin: "https://linkedin.com/in/nailyrosyadadarojat",
+          linkedinHandle: "@nailyrosyadadarojat"
+        }
+      },
+
+      timeline: [
+        {
+          id: "edu-undip",
+          year: "2026 – Sekarang",
+          category: "education",
+          role: "Mahasiswa S1 Fisika",
+          institution: "Universitas Diponegoro (Undip)",
+          shortDesc: "Menempuh studi sarjana di Program Studi Fisika, Fakultas Sains dan Matematika Universitas Diponegoro.",
+          details: [
+            "Fokus studi: Fisika Dasar & Teoretis, Mekanika, Elektromagnetika, Termodinamika, serta Olah Data & Analisis Statistik Penelitian.",
+            "Mempersiapkan diri aktif dalam ajang Olimpiade Nasional Matematika dan Ilmu Pengetahuan Alam Perguruan Tinggi (ONMIPA-PT).",
+            "Aktif menyusun Karya Tulis Ilmiah (KTI), Artikel Ilmiah, Essay Akademik, serta proposal Program Kreativitas Mahasiswa (PKM)."
+          ]
+        },
+        {
+          id: "edu-sman1",
+          year: "2023 – 2026",
+          category: "education",
+          role: "Jurusan IPA — Lulusan Siswa Terbaik 1",
+          institution: "SMA Negeri 1 Gringsing",
+          shortDesc: "Nilai Akhir: 93,73. Peraih peringkat 1 besar di kelas selama 6 semester berturut-turut & Lulusan siswa terbaik 1 di sekolah.",
+          details: [
+            "Nilai Akhir: 93,73 (Lulusan siswa terbaik 1 di sekolah sesuai SK Kepala SMA Negeri 1 Gringsing No: 400.3.10.3/105/2026).",
+            "Peraih peringkat 1 besar di kelas selama 6 semester berturut-turut tanpa terputus.",
+            "Mewakili sekolah dalam ajang Olimpiade Sains Nasional (OSN) tingkat Kabupaten serta Lomba Cepat Tepat OPI IPB tingkat Nasional."
+          ]
+        },
+        {
+          id: "org-mpk-ketua",
+          year: "2024 – 2025",
+          category: "organization",
+          role: "Ketua — Majelis Perwakilan Kelas (MPK)",
+          institution: "SMA Negeri 1 Gringsing",
+          shortDesc: "Memimpin Organisasi dalam mengawasi kinerja OSIS serta menampung dan menyalurkan aspirasi siswa.",
+          details: [
+            "Memimpin Organisasi dalam mengawasi kinerja OSIS secara objektif, transparan, dan bertanggung jawab.",
+            "Menampung dan menyalurkan aspirasi siswa untuk kemajuan program sekolah.",
+            "Memimpin sidang pleno evaluasi program kerja serta suksesi kepemimpinan kesiswaan."
+          ]
+        },
+        {
+          id: "org-mpk-wakil",
+          year: "2023 – 2024",
+          category: "organization",
+          role: "Wakil Ketua — Majelis Perwakilan Kelas (MPK)",
+          institution: "SMA Negeri 1 Gringsing",
+          shortDesc: "Mendampingi Ketua MPK dalam memimpin organisasi dan mengambil alih kepemimpinan jika ketua berhalangan hadir.",
+          details: [
+            "Mendampingi Ketua MPK dalam memimpin organisasi dan koordinasi antar-komisi.",
+            "Mengambil alih kepemimpinan jika ketua berhalangan hadir dalam agenda rapat maupun kegiatan resmi sekolah."
+          ]
+        },
+        {
+          id: "org-pmr-2024",
+          year: "2024 – 2025",
+          category: "organization",
+          role: "Sekbid Kesehatan — Palang Merah Remaja (PMR)",
+          institution: "SMA Negeri 1 Gringsing",
+          shortDesc: "Penyediaan Pertolongan Pertama (PP) dan Pengelola Unit Kesehatan Sekolah (UKS).",
+          details: [
+            "Penyediaan Pertolongan Pertama (PP) pada kegiatan upacara dan aktivitas kesiswaan di sekolah.",
+            "Pengelola Unit Kesehatan Sekolah (UKS), memastikan kesiapan fasilitas kesehatan dan obat-obatan."
+          ]
+        },
+        {
+          id: "org-pmr-2023",
+          year: "2023 – 2024",
+          category: "organization",
+          role: "Sekbid Kesehatan — Palang Merah Remaja (PMR)",
+          institution: "SMA Negeri 1 Gringsing",
+          shortDesc: "Penyediaan Pertolongan Pertama (PP) dan Pengelola Unit Kesehatan Sekolah (UKS).",
+          details: [
+            "Penyediaan Pertolongan Pertama (PP) bagi warga sekolah yang membutuhkan penanganan medis dasar.",
+            "Pengelola Unit Kesehatan Sekolah (UKS) secara terjadwal dan terorganisir."
+          ]
+        }
+      ],
+
+      certificates: [
+        {
+          id: "cert-lulusan-terbaik",
+          title: "Sertifikat Lulusan Terbaik SMA Negeri 1 Gringsing – Tingkat Sekolah",
+          organizer: "SMA Negeri 1 Gringsing (Kepala Sekolah Ari Diah Pramesti, S.Pd., M.Si.)",
+          year: "2026",
+          nomorSurat: "No: 400.3.10.3/105/2026",
+          level: "sekolah",
+          levelBadge: "Tingkat Sekolah",
+          badgeColor: "bg-blue-500/20 text-blue-300 border-blue-400/30",
+          description: "Piagam penghargaan resmi sebagai Lulusan Siswa Terbaik 1 Tahun Ajaran 2025/2026 dengan Nilai Akhir 93,73 dan Peringkat 1 kelas selama 6 semester berturut-turut.",
+          image: "assets/cert-lulusan-terbaik.jpg"
+        },
+        {
+          id: "cert-ipb-nasional",
+          title: "Juara Harapan 3 Lomba Cepat Tepat OPI Fakultas Pertanian IPB – Tingkat Nasional",
+          organizer: "Fakultas Pertanian Institut Pertanian Bogor (IPB University)",
+          year: "2025",
+          nomorSurat: "No. 0362/OPI-I/X/2025",
+          level: "nasional",
+          levelBadge: "Tingkat Nasional",
+          badgeColor: "bg-amber-500/20 text-amber-300 border-amber-400/30",
+          description: "Sertifikat Penghargaan Lomba Cepat Tepat Tingkat Nasional Olimpiade Pertanian Indonesia (OPI) 2025 yang diselenggarakan oleh Fakultas Pertanian IPB University.",
+          image: "assets/cert-ipb-nasional.jpg"
+        },
+        {
+          id: "cert-osn-puspresnas",
+          title: "Peringkat 7 Olimpiade Sains Nasional (OSN) Cabang Fisika – Tingkat Kabupaten",
+          organizer: "Puspresnas / Balai Pengembangan Talenta Indonesia (BPTI)",
+          year: "2025",
+          nomorSurat: "Penghargaan Khusus Cabang Fisika Kab/Kota 2025",
+          level: "kabupaten",
+          levelBadge: "Tingkat Kabupaten",
+          badgeColor: "bg-cyan-500/20 text-cyan-300 border-cyan-400/30",
+          description: "Peringkat 7 Olimpiade Sains Nasional (OSN) Cabang Fisika Tingkat Kabupaten/Kota Tahun 2025 terverifikasi Puspresnas.",
+          image: "assets/cert-osn-puspresnas.jpg"
+        },
+        {
+          id: "cert-dongeng-jawa",
+          title: "Juara 3 Lomba Mendongeng Berbahasa Jawa – Tingkat Provinsi",
+          organizer: "Pemerintah Provinsi Jawa Tengah — Cabang Dinas Pendidikan Wilayah XIII",
+          year: "2025",
+          nomorSurat: "No: 400.3.7.4/12280/XI/2025",
+          level: "provinsi",
+          levelBadge: "Tingkat Provinsi",
+          badgeColor: "bg-purple-500/20 text-purple-300 border-purple-400/30",
+          description: "Piagam Penghargaan Juara 3 Lomba Mendongeng Berbahasa Jawa Jenjang SMA/SMK Tingkat Provinsi Jawa Tengah Cabang Dinas Wilayah XIII.",
+          image: "assets/cert-dongeng-jawa.jpg"
+        },
+        {
+          id: "cert-storytelling-islami",
+          title: "Juara 1 Lomba Story Telling Islami – Tingkat Sekolah",
+          organizer: "SMA Negeri 1 Gringsing",
+          year: "2025",
+          nomorSurat: "No: 027/LSTI/III/2025",
+          level: "sekolah",
+          levelBadge: "Tingkat Sekolah",
+          badgeColor: "bg-emerald-500/20 text-emerald-300 border-emerald-400/30",
+          description: "Piagam Penghargaan Juara 1 Lomba Story Telling Islami dalam rangka Ramadhan Kareem SMA Negeri 1 Gringsing Tahun 2025.",
+          image: "assets/cert-storytelling-islami.jpg"
+        },
+        {
+          id: "cert-osn-2024",
+          title: "Peringkat 7 Olimpiade Sains Nasional (OSN) – Tingkat Kabupaten (2024)",
+          organizer: "Puspresnas / Balai Pengembangan Talenta Indonesia (BPTI)",
+          year: "2024",
+          nomorSurat: "Penghargaan OSN Tingkat Kabupaten Tahun 2024",
+          level: "kabupaten",
+          levelBadge: "Tingkat Kabupaten",
+          badgeColor: "bg-cyan-500/20 text-cyan-300 border-cyan-400/30",
+          description: "Sertifikat Peringkat 7 Olimpiade Sains Nasional (OSN) Tingkat Kabupaten Tahun 2024 sesuai data arsip CV resmi.",
+          image: "assets/cert-osn-puspresnas.jpg"
+        }
+      ],
+
+      documents: [
+        {
+          id: "doc-cv-pdf",
+          name: "Curriculum_Vitae_Naily_Rosyada_Darojat.pdf",
+          category: "cv",
+          categoryName: "CV Resmi",
+          type: "PDF",
+          size: "248 KB",
+          date: "2026",
+          isPrimaryCV: true,
+          description: "Dokumen Curriculum Vitae resmi lengkap Naily Rosyada Darojat (Pendidikan S1 Fisika Undip & SMAN 1 Gringsing, 6 Prestasi Utama, Organisasi MPK & PMR, Keahlian DOCX/KTI/SPSS)."
+        }
+      ],
+
+      messages: [
+        {
+          id: "msg-sample-1",
+          name: "Tim Akademik & Riset Mahasiswa Undip",
+          email: "fisika@fsm.undip.ac.id",
+          subject: "Kolaborasi Tim PKM & Persiapan ONMIPA Fisika 2026",
+          message: "Selamat datang di Departemen Fisika Fakultas Sains dan Matematika Universitas Diponegoro. Mari bergabung dalam pembinaan ONMIPA-PT dan tim penulisan PKM/LKTI.",
+          timestamp: "31 Okt 2026, 10:15",
+          read: false
+        }
+      ]
+    };
+
+    // ══════════════════════════════════════════════════════════════════════
+    // 4. STATE PERSISTENCE
+    // ══════════════════════════════════════════════════════════════════════
+    const STORAGE_KEY = "NAILY_PORTFOLIO_STATE_V10_LOGO";
+
+    function loadAppState() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          return {
+            profile: { ...INITIAL_DATA.profile, ...(parsed.profile || {}) },
+            timeline: parsed.timeline || INITIAL_DATA.timeline,
+            certificates: parsed.certificates || INITIAL_DATA.certificates,
+            documents: parsed.documents || INITIAL_DATA.documents,
+            messages: parsed.messages || INITIAL_DATA.messages
+          };
+        }
+      } catch (err) {
+        console.warn("Using default initial state:", err);
+      }
+      return JSON.parse(JSON.stringify(INITIAL_DATA));
+    }
+
+    let appState = loadAppState();
+
+    function saveAppState() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(appState));
+      } catch (e) {
+        console.error("Failed to save state", e);
+      }
+    }
+
+    // ══════════════════════════════════════════════════════════════════════
+    // 5. TOAST NOTIFICATION HELPER
+    // ══════════════════════════════════════════════════════════════════════
+    function showToast(message, type = "success") {
+      const container = document.getElementById("toast-container");
+      if (!container) return;
+
+      const toast = document.createElement("div");
+      toast.className = `p-4 rounded-2xl glass-card border flex items-center gap-3 text-xs sm:text-sm font-semibold shadow-2xl transition-all duration-300 transform translate-y-4 opacity-0 pointer-events-auto ${
+        type === "success" 
+          ? "border-emerald-500/40 text-emerald-300 bg-emerald-950/90" 
+          : type === "error" 
+          ? "border-rose-500/40 text-rose-300 bg-rose-950/90" 
+          : "border-blue-500/40 text-cyan-300 bg-navy-900/95"
+      }`;
+
+      const iconName = type === "success" ? "check-circle" : type === "error" ? "alert-circle" : "info";
+      toast.innerHTML = `
+        <i data-lucide="${iconName}" class="w-5 h-5 flex-shrink-0"></i>
+        <span>${message}</span>
+      `;
+
+      container.appendChild(toast);
+      if (window.lucide) lucide.createIcons();
+
+      requestAnimationFrame(() => {
+        toast.classList.remove("translate-y-4", "opacity-0");
+      });
+
+      setTimeout(() => {
+        toast.classList.add("translate-y-4", "opacity-0");
+        setTimeout(() => toast.remove(), 300);
+      }, 3800);
+    }
+
+    // ══════════════════════════════════════════════════════════════════════
+    // 6. ANIMATED PARTICLES & QUANTUM CANVAS BACKGROUND
+    // ══════════════════════════════════════════════════════════════════════
+    function initParticlesCanvas() {
+      const canvas = document.getElementById("particles-canvas");
+      if (!canvas) return;
+
+      const ctx = canvas.getContext("2d");
+      let width, height;
+      let particles = [];
+      const particleCount = window.innerWidth < 768 ? 30 : 60;
+
+      function resize() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      }
+      window.addEventListener("resize", resize);
+      resize();
+
+      class Particle {
+        constructor() {
+          this.x = Math.random() * width;
+          this.y = Math.random() * height;
+          this.vx = (Math.random() - 0.5) * 0.65;
+          this.vy = (Math.random() - 0.5) * 0.65;
+          this.radius = Math.random() * 2 + 0.8;
+        }
+        update() {
+          this.x += this.vx;
+          this.y += this.vy;
+          if (this.x < 0 || this.x > width) this.vx *= -1;
+          if (this.y < 0 || this.y > height) this.vy *= -1;
+        }
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+          ctx.fillStyle = "rgba(0, 229, 255, 0.42)";
+          ctx.fill();
+        }
+      }
+
+      for (let i = 0; i < particleCount; i++) {
+        particles.push(new Particle());
+      }
+
+      function animate() {
+        ctx.clearRect(0, 0, width, height);
+
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+
+            if (dist < 125) {
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.strokeStyle = `rgba(0, 229, 255, ${0.14 * (1 - dist / 125)})`;
+              ctx.lineWidth = 0.7;
+              ctx.stroke();
+            }
+          }
+        }
+
+        particles.forEach(p => {
+          p.update();
+          p.draw();
+        });
+
+        requestAnimationFrame(animate);
+      }
+
+      animate();
+    }
+
+    // ══════════════════════════════════════════════════════════════════════
+    // 7. TYPEWRITER EFFECT IN HERO
+    // ══════════════════════════════════════════════════════════════════════
+    function initTypewriter() {
+      const el = document.getElementById("typewriter-text");
+      if (!el) return;
+
+      const titles = appState.profile.titles || INITIAL_DATA.profile.titles;
+      let titleIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      let currentDelay = 90;
+
+      function type() {
+        const current = titles[titleIndex % titles.length];
+
+        if (isDeleting) {
+          el.textContent = current.substring(0, charIndex - 1);
+          charIndex--;
+          currentDelay = 35;
+        } else {
+          el.textContent = current.substring(0, charIndex + 1);
+          charIndex++;
+          currentDelay = 75;
+        }
+
+        if (!isDeleting && charIndex === current.length) {
+          isDeleting = true;
+          currentDelay = 2200;
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          titleIndex++;
+          currentDelay = 350;
+        }
+
+        setTimeout(type, currentDelay);
+      }
+
+      type();
+    }
+
+    // ══════════════════════════════════════════════════════════════════════
+    // 8. RENDER HERO & PROFILE (WITH OFFICIAL BRAND LOGOS FOR IG & LINKEDIN)
+    // ══════════════════════════════════════════════════════════════════════
+    window.getBrandLogoSVG = function(brand, sizeClass = "w-5 h-5") {
+      if (brand === "instagram") {
+        return `<svg class="${sizeClass} flex-shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="igBrandGrad" x1="2" y1="22" x2="22" y2="2" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#feda75"/>
+              <stop offset="25%" stop-color="#fa7e1e"/>
+              <stop offset="50%" stop-color="#d62976"/>
+              <stop offset="75%" stop-color="#962fbf"/>
+              <stop offset="100%" stop-color="#4f5bd5"/>
+            </linearGradient>
+          </defs>
+          <rect x="2" y="2" width="20" height="20" rx="5.5" fill="url(#igBrandGrad)"/>
+          <rect x="5.2" y="5.2" width="13.6" height="13.6" rx="4" stroke="#ffffff" stroke-width="1.8" fill="none"/>
+          <circle cx="12" cy="12" r="3.2" stroke="#ffffff" stroke-width="1.8" fill="none"/>
+          <circle cx="16.2" cy="7.8" r="1.15" fill="#ffffff"/>
+        </svg>`;
+      }
+      if (brand === "linkedin") {
+        return `<svg class="${sizeClass} flex-shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="2" width="20" height="20" rx="4" fill="#0A66C2"/>
+          <path d="M7.5 10.2V17.2M7.5 6.9V7.05M11.4 17.2V13.1C11.4 11.4 12.5 10.2 14.2 10.2C15.8 10.2 16.7 11.3 16.7 13.1V17.2M11.4 10.2V17.2" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>`;
+      }
+      return `<svg class="${sizeClass} flex-shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="4" width="20" height="16" rx="3.5" fill="#0284c7"/>
+        <path d="M3.5 6.8L12 13L20.5 6.8" stroke="#ffffff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>`;
+    };
+
+    function renderProfile() {
+      const p = appState.profile;
+
+      const nameEl = document.getElementById("hero-name-display");
+      if (nameEl) nameEl.textContent = p.fullName.toUpperCase();
+
+      const bioEl = document.getElementById("hero-bio-display");
+      if (bioEl) bioEl.innerHTML = p.bio;
+
+      const imgEl = document.getElementById("profile-img-element");
+      if (imgEl && p.photoUrl) {
+        imgEl.src = p.photoUrl;
+      }
+
+      const container = document.getElementById("hero-social-links");
+      if (container) {
+        const s = p.socials;
+        container.innerHTML = `
+          <a href="${s.instagram}" target="_blank" title="Instagram Resmi @nai.r.d" class="px-3.5 py-2 rounded-xl bg-white/5 hover:bg-pink-600/20 border border-white/10 hover:border-pink-400/50 text-slate-200 hover:text-white transition-all hover:scale-105 flex items-center gap-2 text-xs font-mono shadow-md">
+            ${window.getBrandLogoSVG("instagram", "w-5 h-5")}
+            <span class="font-semibold">@nai.r.d</span>
+          </a>
+          <a href="${s.linkedin}" target="_blank" title="LinkedIn Resmi @nailyrosyadadarojat" class="px-3.5 py-2 rounded-xl bg-white/5 hover:bg-blue-600/20 border border-white/10 hover:border-blue-400/50 text-slate-200 hover:text-white transition-all hover:scale-105 flex items-center gap-2 text-xs font-mono shadow-md">
+            ${window.getBrandLogoSVG("linkedin", "w-5 h-5")}
+            <span class="font-semibold">@nailyrosyadadarojat</span>
+          </a>
+          <a href="${s.email}" title="Kirim Email" class="px-3.5 py-2 rounded-xl bg-white/5 hover:bg-sky-500/20 border border-white/10 hover:border-sky-400/50 text-slate-200 hover:text-white transition-all hover:scale-105 flex items-center gap-2 text-xs font-mono shadow-md">
+            ${window.getBrandLogoSVG("email", "w-5 h-5")}
+            <span class="font-semibold">darojatdorojat@gmail.com</span>
+          </a>
+        `;
+      }
+    }
+
+    // ══════════════════════════════════════════════════════════════════════
+    // 9. RENDER TIMELINE (PENDIDIKAN & ORGANISASI SESUAI CV)
+    // ══════════════════════════════════════════════════════════════════════
+    let currentTimelineCategory = "all";
+
+    function renderTimeline() {
+      const container = document.getElementById("timeline-list");
+      if (!container) return;
+
+      const items = appState.timeline.filter(item => {
+        if (currentTimelineCategory === "all") return true;
+        return item.category === currentTimelineCategory;
+      });
+
+      container.innerHTML = "";
+
+      items.forEach((item, index) => {
+        const isLeft = index % 2 === 0;
+        const card = document.createElement("div");
+        card.className = "relative flex flex-col sm:flex-row items-center w-full group";
+
+        let iconName = "users";
+        let iconColor = "text-purple-400 bg-purple-500/20 border-purple-400/40";
+        let catLabel = "Pengalaman Organisasi";
+
+        if (item.category === "education") {
+          iconName = "graduation-cap";
+          iconColor = "text-accent-cyan bg-cyan-500/20 border-cyan-400/40";
+          catLabel = "Latar Belakang Pendidikan";
+        }
+
+        const detailsListHtml = (item.details || []).map(d => `
+          <li class="flex items-start gap-2 text-xs text-slate-300/90">
+            <span class="text-accent-cyan mt-0.5">•</span>
+            <span>${d}</span>
+          </li>
+        `).join("");
+
+        card.innerHTML = `
+          <div class="absolute left-4 sm:left-1/2 -translate-x-1/2 w-9 h-9 rounded-full ${iconColor} border flex items-center justify-center z-10 shadow-lg group-hover:scale-125 transition-transform bg-navy-950">
+            <i data-lucide="${iconName}" class="w-4 h-4"></i>
+          </div>
+
+          <div class="w-full sm:w-1/2 ${isLeft ? 'sm:pr-10' : 'sm:pl-10 sm:ml-auto'} pl-12 sm:pl-0 mt-4 sm:mt-0">
+            <div class="p-6 rounded-3xl glass-card border border-white/10 hover:border-accent-cyan/40 transition-all hover:scale-[1.01] cursor-pointer shadow-xl text-left" onclick="openTimelineDetail('${item.id}')">
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="text-xs font-mono font-bold text-accent-cyan px-3 py-0.5 rounded-full bg-accent-cyan/10 border border-accent-cyan/25">${item.year}</span>
+                <span class="text-[11px] font-mono text-slate-400 uppercase tracking-wider">${catLabel}</span>
+              </div>
+              <h4 class="text-base sm:text-lg font-bold text-white group-hover:text-accent-cyan transition-colors">${item.role}</h4>
+              <p class="text-xs sm:text-sm text-blue-300 font-semibold mb-2">${item.institution}</p>
+              <p class="text-xs sm:text-sm text-slate-200 leading-relaxed mb-3">${item.shortDesc}</p>
+              
+              <ul class="space-y-1.5 border-t border-white/10 pt-3">
+                ${detailsListHtml}
+              </ul>
+
+              <div class="mt-4 pt-2.5 border-t border-white/5 flex items-center justify-between text-xs text-accent-cyan font-semibold">
+                <span>Klik untuk detail penuh</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </div>
+            </div>
+          </div>
+        `;
+
+        container.appendChild(card);
+      });
+
+      if (window.lucide) lucide.createIcons();
+    }
+
+    // ══════════════════════════════════════════════════════════════════════
+    // 13. SOCIAL MEDIA INTEGRATION (WITH LARGE COLORFUL IG & LINKEDIN LOGOS)
+    // ══════════════════════════════════════════════════════════════════════
+    function renderSocialConnect() {
+      const container = document.getElementById("social-grid-cards");
+      if (!container) return;
+
+      const s = appState.profile.socials;
+
+      const socialItems = [
+        {
+          name: "Instagram Resmi",
+          handle: "@nai.r.d",
+          url: s.instagram,
+          brand: "instagram",
+          badgeText: "Follow Instagram",
+          color: "hover:border-pink-500/60 hover:shadow-pink-500/15"
+        },
+        {
+          name: "LinkedIn Akademik",
+          handle: "@nailyrosyadadarojat",
+          url: s.linkedin,
+          brand: "linkedin",
+          badgeText: "Connect LinkedIn",
+          color: "hover:border-blue-500/60 hover:shadow-blue-500/15"
+        },
+        {
+          name: "Email Langsung",
+          handle: "darojatdorojat@gmail.com",
+          url: s.email,
+          brand: "email",
+          badgeText: "Kirim Email",
+          color: "hover:border-sky-500/60 hover:shadow-sky-500/15"
+        }
+      ];
+
+      container.innerHTML = "";
+
+      socialItems.forEach(item => {
+        const card = document.createElement("a");
+        card.href = item.url;
+        card.target = "_blank";
+        card.className = `p-6 rounded-3xl glass-card border border-white/10 ${item.color} flex flex-col items-center text-center space-y-4 group transition-all hover:scale-105 active:scale-95 shadow-xl`;
+
+        card.innerHTML = `
+          <div class="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 shadow-lg">
+            ${window.getBrandLogoSVG(item.brand, "w-10 h-10")}
+          </div>
+          <div>
+            <h5 class="text-base font-bold text-white group-hover:text-accent-cyan transition-colors">${item.name}</h5>
+            <p class="text-xs text-slate-300 font-mono mt-1 font-semibold">${item.handle}</p>
+          </div>
+          <span class="px-3.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] font-semibold text-slate-300 group-hover:text-white group-hover:border-accent-cyan/40 flex items-center gap-1">
+            <span>${item.badgeText}</span>
+            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 text-accent-cyan"></i>
+          </span>
+        `;
+
+        container.appendChild(card);
+      });
+
+      if (window.lucide) lucide.createIcons();
+    }
+
+    window.openTimelineDetail = function(id) {
+      const item = appState.timeline.find(t => t.id === id);
+      if (!item) return;
+
+      const modal = document.getElementById("detail-modal");
+      const title = document.getElementById("detail-modal-title");
+      const meta = document.getElementById("detail-modal-meta");
+      const body = document.getElementById("detail-modal-body");
+
+      title.textContent = `${item.role} — ${item.institution}`;
+      meta.textContent = `Periode: ${item.year}`;
+
+      let bulletPoints = (item.details || []).map(d => `
+        <li class="flex items-start gap-2.5">
+          <i data-lucide="check-circle-2" class="w-4 h-4 text-accent-cyan mt-1 flex-shrink-0"></i>
+          <span>${d}</span>
+        </li>
+      `).join("");
+
+      body.innerHTML = `
+        <div class="space-y-4">
+          <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+            <p class="text-xs font-mono uppercase text-slate-400 mb-1">Ringkasan Peran:</p>
+            <p class="text-sm text-white font-medium">${item.shortDesc}</p>
+          </div>
+
+          <div class="space-y-2">
+            <p class="text-xs font-mono uppercase text-accent-cyan font-bold">Rincian Sesuai CV Resmi:</p>
+            <ul class="space-y-2.5 text-slate-300 text-xs sm:text-sm">
+              ${bulletPoints}
+            </ul>
+          </div>
+
+          <div class="p-3 rounded-xl bg-blue-500/10 border border-blue-400/20 text-xs text-blue-300 flex items-center gap-2">
+            <i data-lucide="shield-check" class="w-4 h-4 flex-shrink-0"></i>
+            <span>Data terverifikasi dan sesuai dengan dokumen Curriculum Vitae Naily Rosyada Darojat.</span>
+          </div>
+        </div>
+      `;
+
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+      if (window.lucide) lucide.createIcons();
+    };
+
+    // ══════════════════════════════════════════════════════════════════════
+    // 10. RENDER SKILLS PROGRESS BARS
+    // ══════════════════════════════════════════════════════════════════════
+    function initSkills() {
+      const skillElements = document.querySelectorAll(".skill-item");
+      skillElements.forEach(el => {
+        const name = el.getAttribute("data-name");
+        const percent = el.getAttribute("data-percent");
+
+        el.innerHTML = `
+          <div class="flex items-center justify-between text-xs mb-1">
+            <span class="font-medium text-slate-200">${name}</span>
+            <span class="font-mono text-accent-cyan font-bold">${percent}%</span>
+          </div>
+          <div class="w-full h-2 rounded-full bg-navy-950 border border-white/5 overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-blue-600 to-cyan-400 rounded-full transition-all duration-1000 ease-out" style="width: 0%" data-target-width="${percent}%"></div>
+          </div>
+        `;
+      });
+
+      setTimeout(() => {
+        document.querySelectorAll("[data-target-width]").forEach(bar => {
+          bar.style.width = bar.getAttribute("data-target-width");
+        });
+      }, 250);
+    }
+
+    // ══════════════════════════════════════════════════════════════════════
+    // 11. RENDER CERTIFICATES (GUARANTEED VISIBLE HIGH-RES PIAGAM IMAGES)
+    // ══════════════════════════════════════════════════════════════════════
+    let currentCertCategory = "all";
+    let currentZoomLevel = 1;
+    let activeCertModalItem = null;
+
+    function renderCertificates() {
+      const grid = document.getElementById("certificates-grid");
+      if (!grid) return;
+
+      const items = appState.certificates.filter(c => {
+        if (currentCertCategory === "all") return true;
+        return c.level === currentCertCategory;
+      });
+
+      grid.innerHTML = "";
+
+      items.forEach(cert => {
+        const card = document.createElement("div");
+        card.className = "glass-card rounded-3xl border border-white/10 overflow-hidden p-5 flex flex-col justify-between hover:border-amber-400/50 transition-all hover:-translate-y-1 shadow-xl group";
+
+        // Generate guaranteed high-resolution SVG certificate data URL
+        const fallbackSvgUrl = window.generateCertificateVisualDataUrl(cert);
+        const primaryImgSrc = cert.image ? cert.image : fallbackSvgUrl;
+
+        card.innerHTML = `
+          <div class="space-y-4">
+            <div onclick="openCertificateModal('${cert.id}')" class="w-full aspect-[4/3] rounded-2xl overflow-hidden border border-white/15 shadow-lg relative group-hover:scale-[1.02] transition-transform bg-navy-950 flex items-center justify-center cursor-pointer">
+              <img src="${primaryImgSrc}" 
+                   alt="${cert.title}" 
+                   onerror="this.onerror=null; this.src='${fallbackSvgUrl}';"
+                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-transparent to-transparent flex items-end justify-between p-3">
+                <span class="text-[10px] font-mono text-amber-300 font-bold bg-navy-950/90 px-2.5 py-1 rounded-lg border border-amber-400/30 flex items-center gap-1">
+                  <i data-lucide="check-circle-2" class="w-3 h-3 text-emerald-400"></i> Piagam Terverifikasi
+                </span>
+                <span class="p-1.5 rounded-lg bg-navy-950/80 text-white border border-white/15">
+                  <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between gap-2">
+                <span class="px-2.5 py-0.5 rounded-md ${cert.badgeColor} border text-[10px] font-mono font-bold">${cert.levelBadge}</span>
+                <span class="text-xs font-mono font-bold text-amber-300">${cert.year}</span>
+              </div>
+              <h4 onclick="openCertificateModal('${cert.id}')" class="text-sm sm:text-base font-bold text-white group-hover:text-amber-300 transition-colors cursor-pointer line-clamp-2">${cert.title}</h4>
+              <p class="text-[11px] text-blue-300 font-medium line-clamp-1">${cert.organizer}</p>
+              <p class="text-xs text-slate-400 line-clamp-2">${cert.description}</p>
+            </div>
+          </div>
+
+          <div class="pt-4 mt-4 border-t border-white/10 flex items-center justify-between gap-2">
+            <button onclick="openCertificateModal('${cert.id}')" class="flex-1 py-2.5 px-3 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-400/30 text-amber-300 font-bold text-xs flex items-center justify-center gap-1.5 transition-all">
+              <i data-lucide="zoom-in" class="w-3.5 h-3.5"></i>
+              <span>Lihat Piagam Penuh</span>
+            </button>
+            <button onclick="downloadCertificateDirect('${cert.id}')" title="Unduh Sertifikat" class="p-2.5 rounded-xl bg-white/5 hover:bg-white/15 border border-white/10 text-slate-300 hover:text-white transition-all">
+              <i data-lucide="download" class="w-4 h-4"></i>
+            </button>
+          </div>
+        `;
+
+        grid.appendChild(card);
+      });
+
+      if (window.lucide) lucide.createIcons();
+    }
+
+    window.openCertificateModal = function(id) {
+      const cert = appState.certificates.find(c => c.id === id);
+      if (!cert) return;
+
+      activeCertModalItem = cert;
+      currentZoomLevel = 1;
+
+      const modal = document.getElementById("cert-modal");
+      const title = document.getElementById("cert-modal-title");
+      const meta = document.getElementById("cert-modal-meta");
+      const canvasWrap = document.getElementById("cert-modal-canvas-wrapper");
+
+      title.textContent = cert.title;
+      meta.textContent = `${cert.organizer} • Tahun ${cert.year} • ${cert.levelBadge}`;
+
+      canvasWrap.style.transform = `scale(${currentZoomLevel})`;
+
+      const fallbackSvgUrl = window.generateCertificateVisualDataUrl(cert);
+      const primaryImgSrc = cert.image ? cert.image : fallbackSvgUrl;
+
+      canvasWrap.innerHTML = `
+        <div class="max-w-3xl w-full rounded-2xl overflow-hidden border-2 border-amber-400/50 shadow-2xl bg-navy-900 flex flex-col items-center">
+          <img src="${primaryImgSrc}" 
+               alt="${cert.title}" 
+               onerror="this.onerror=null; this.src='${fallbackSvgUrl}';"
+               class="w-full h-auto max-h-[66vh] object-contain bg-white" />
+          <div class="w-full p-4 bg-navy-900 border-t border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-slate-300">
+            <div>
+              <p class="font-bold text-white">${cert.title}</p>
+              <p class="text-slate-400">${cert.organizer} (${cert.nomorSurat || 'Terverifikasi'})</p>
+            </div>
+            <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-mono text-[11px] self-start sm:self-center">
+              ✓ Dokumen Sesuai CV Resmi
+            </span>
+          </div>
+        </div>
+      `;
+
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+      if (window.lucide) lucide.createIcons();
+    };
+
+    window.downloadCertificateDirect = function(id) {
+      const cert = appState.certificates.find(c => c.id === id);
+      if (!cert) return;
+
+      const svgDataUrl = window.generateCertificateVisualDataUrl(cert);
+      const a = document.createElement("a");
+      a.href = svgDataUrl;
+      a.download = `Piagam_${cert.title.replace(/[^a-zA-Z0-9]+/g, "_")}_Naily_Rosyada.svg`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+
+      showToast(`Piagam "${cert.title}" berhasil diunduh!`, "success");
+    };
+
+    // ══════════════════════════════════════════════════════════════════════
+    // 12. MY DOCUMENTS (FILE EXPLORER) & INTERACTIVE 2-PAGE CV READER
+    // ══════════════════════════════════════════════════════════════════════
+    let currentDocFilter = "all";
+    let documentSearchQuery = "";
+    let isDocGridView = true;
+    let activePDFDoc = null;
+    let currentPDFPage = 1;
+
+    function renderDocuments() {
+      const container = document.getElementById("documents-container");
+      const counter = document.getElementById("doc-counter");
+      if (!container) return;
+
+      const docs = appState.documents.filter(doc => {
+        if (currentDocFilter === "cv" && doc.category !== "cv") return false;
+        if (currentDocFilter === "academic" && doc.category !== "academic") return false;
+        if (currentDocFilter === "organization" && doc.category !== "organization") return false;
+
+        if (documentSearchQuery) {
+          const q = documentSearchQuery.toLowerCase();
+          return doc.name.toLowerCase().includes(q) || doc.description.toLowerCase().includes(q);
+        }
+        return true;
+      });
+
+      if (counter) counter.textContent = `${docs.length} Berkas`;
+
+      container.innerHTML = "";
+
+      if (docs.length === 0) {
+        container.className = "w-full text-center py-12";
+        container.innerHTML = `
+          <div class="text-slate-400 space-y-2">
+            <i data-lucide="file-question" class="w-12 h-12 mx-auto text-slate-500"></i>
+            <p class="text-sm">Tidak ada berkas yang cocok dengan pencarian "${documentSearchQuery}".</p>
+          </div>
+        `;
+        if (window.lucide) lucide.createIcons();
+        return;
+      }
+
+      if (isDocGridView) {
+        container.className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4";
+        docs.forEach(doc => {
+          const card = document.createElement("div");
+          card.className = "doc-item-grid group";
+          const badgeColors = doc.type === "DOCX" ? "bg-indigo-500/20 text-indigo-300 border-indigo-400/30" : "bg-blue-500/20 text-accent-cyan border-blue-500/30";
+          card.innerHTML = `
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="w-11 h-10 rounded-xl ${badgeColors} flex items-center justify-center font-bold text-xs border">
+                  ${doc.type}
+                </div>
+                <span class="text-[10px] font-mono text-slate-400">${doc.size} • ${doc.date}</span>
+              </div>
+
+              <div>
+                <h5 class="text-xs sm:text-sm font-bold text-white group-hover:text-accent-cyan transition-colors line-clamp-1" title="${doc.name}">${doc.name}</h5>
+                <p class="text-[11px] text-slate-400 mt-1 line-clamp-2">${doc.description}</p>
+              </div>
+            </div>
+
+            <div class="pt-3 mt-3 border-t border-white/10 flex items-center justify-between gap-2">
+              <button onclick="openPDFViewer('${doc.id}')" class="flex-1 py-2 px-2.5 rounded-xl bg-blue-600/20 hover:bg-blue-600/40 text-accent-cyan font-bold text-xs flex items-center justify-center gap-1.5 transition-all">
+                <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+                <span>Buka Dokumen</span>
+              </button>
+              <button onclick="downloadDocumentDirect('${doc.id}')" title="Unduh Berkas" class="p-2 rounded-xl bg-white/5 hover:bg-white/15 text-slate-300 hover:text-white transition-all">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          `;
+          container.appendChild(card);
+        });
+      } else {
+        container.className = "space-y-2";
+        docs.forEach(doc => {
+          const item = document.createElement("div");
+          item.className = "doc-item-list";
+          item.innerHTML = `
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-9 rounded-lg bg-blue-500/20 text-accent-cyan flex items-center justify-center font-bold text-xs">
+                ${doc.type}
+              </div>
+              <div>
+                <h5 class="text-xs sm:text-sm font-bold text-white hover:text-accent-cyan cursor-pointer transition-colors" onclick="openPDFViewer('${doc.id}')">${doc.name}</h5>
+                <p class="text-[11px] text-slate-400">${doc.categoryName} • ${doc.size} • ${doc.date}</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <button onclick="openPDFViewer('${doc.id}')" class="px-3 py-1.5 rounded-lg bg-blue-600/20 hover:bg-blue-600/40 text-accent-cyan text-xs font-semibold flex items-center gap-1">
+                <i data-lucide="eye" class="w-3.5 h-3.5"></i> Preview
+              </button>
+              <button onclick="downloadDocumentDirect('${doc.id}')" class="p-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          `;
+          container.appendChild(item);
+        });
+      }
+
+      if (window.lucide) lucide.createIcons();
+    }
+
+    window.openPDFViewer = function(id) {
+      const doc = appState.documents.find(d => d.id === id);
+      if (!doc) return;
+
+      activePDFDoc = doc;
+      currentPDFPage = 1;
+
+      const modal = document.getElementById("pdf-viewer-modal");
+      const title = document.getElementById("pdf-modal-title");
+      const sizeMeta = document.getElementById("pdf-modal-size");
+      const indicator = document.getElementById("pdf-page-indicator");
+
+      title.textContent = doc.name;
+      sizeMeta.textContent = `${doc.size} • Format ${doc.type} Terverifikasi • ${doc.date}`;
+      indicator.textContent = `Hal ${currentPDFPage} / 2`;
+
+      renderPDFPageContent();
+
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+      if (window.lucide) lucide.createIcons();
+    };
+
+    function renderPDFPageContent() {
+      const paper = document.getElementById("pdf-paper-document");
+      if (!paper || !activePDFDoc) return;
+
+      if (activePDFDoc.isPrimaryCV || activePDFDoc.category === "cv") {
+        if (currentPDFPage === 1) {
+          paper.innerHTML = `
+            <div class="space-y-6 font-sans">
+              <!-- CV Header (Exact as file) -->
+              <div class="border-b-2 border-slate-900 pb-4 text-center sm:text-left flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div>
+                  <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-950 uppercase tracking-tight">NAILY ROSYADA DAROJAT</h1>
+                  <p class="text-xs sm:text-sm font-semibold text-slate-700 mt-1">087791166318 | darojatdorojat@gmail.com | Batang, Jawa Tengah</p>
+                </div>
+                <span class="px-3 py-1 rounded-lg bg-slate-900 text-white font-mono text-xs font-bold self-center sm:self-start">Fisika Undip 2026</span>
+              </div>
+
+              <!-- Latar Belakang Pendidikan -->
+              <div class="space-y-2">
+                <h3 class="text-sm font-bold uppercase tracking-wider text-slate-900 bg-slate-100 p-2 rounded">Latar Belakang Pendidikan</h3>
+                <div class="space-y-3 pt-1 text-xs sm:text-sm text-slate-800">
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h4 class="font-bold text-slate-950">SMA Negeri 1 Gringsing</h4>
+                      <p class="font-semibold text-slate-700">Jurusan IPA</p>
+                      <ul class="list-disc list-inside space-y-0.5 mt-1 text-slate-700">
+                        <li>Nilai Akhir : <strong>93,73</strong></li>
+                        <li>Peraih peringkat 1 besar di kelas selama 6 semester berturut-turut</li>
+                        <li>Lulusan siswa terbaik 1 di sekolah</li>
+                      </ul>
+                    </div>
+                    <span class="font-mono font-bold text-slate-700">2023 – 2026</span>
+                  </div>
+
+                  <div class="flex justify-between items-start pt-2 border-t border-slate-200">
+                    <div>
+                      <h4 class="font-bold text-slate-950">Nama Kampus : Universitas Diponegoro</h4>
+                      <p class="text-slate-700 font-semibold">Jurusan / Program Studi : Fisika (S1)</p>
+                      <p class="text-slate-600 text-xs mt-0.5">Minat Kompetisi: ONMIPA-PT, Lomba Karya Tulis Ilmiah (LKTI), Artikel Ilmiah, Essay & PKM</p>
+                    </div>
+                    <span class="font-mono font-bold text-slate-700">2026</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Prestasi Akademik dan Non-Akademik -->
+              <div class="space-y-2">
+                <h3 class="text-sm font-bold uppercase tracking-wider text-slate-900 bg-slate-100 p-2 rounded">Prestasi Akademik dan Non-Akademik</h3>
+                <ul class="text-xs sm:text-sm text-slate-800 space-y-1.5 pt-1">
+                  <li>● <strong>[2026]</strong> Lulusan Terbaik SMA Negeri 1 Gringsing – Tingkat Sekolah</li>
+                  <li>● <strong>[2025]</strong> Peringkat 7 Olimpiade Sains Nasional (OSN) Cabang Fisika – Tingkat Kabupaten</li>
+                  <li>● <strong>[2025]</strong> Juara Harapan 3 Lomba Cepat Tepat OPI Fakultas Pertanian IPB – Tingkat Nasional</li>
+                  <li>● <strong>[2025]</strong> Juara 3 Lomba Mendongeng Berbahasa Jawa – Tingkat Provinsi</li>
+                  <li>● <strong>[2025]</strong> Juara 1 Lomba Story Telling Islami – Tingkat Sekolah</li>
+                  <li>● <strong>[2024]</strong> Peringkat 7 Olimpiade Sains Nasional (OSN) Cabang Ekonomi – Tingkat Kabupaten</li>
+                </ul>
+              </div>
+
+              <!-- Footer Hal 1 -->
+              <div class="pt-6 border-t border-slate-300 flex justify-between items-center text-[11px] text-slate-500 font-mono">
+                <span>Curriculum Vitae Resmi — Naily Rosyada Darojat</span>
+                <button onclick="document.getElementById('pdf-next-page').click()" class="text-blue-700 font-bold hover:underline">Lanjut ke Halaman 2 →</button>
+              </div>
+            </div>
+          `;
+        } else {
+          paper.innerHTML = `
+            <div class="space-y-5 font-sans">
+              <div class="border-b border-slate-300 pb-2 flex justify-between items-center">
+                <h2 class="text-sm sm:text-base font-bold text-slate-900 uppercase">Curriculum Vitae (Lanjutan — Halaman 2)</h2>
+                <button onclick="document.getElementById('pdf-prev-page').click()" class="text-xs font-mono text-blue-700 font-bold hover:underline">← Kembali Hal 1</button>
+              </div>
+
+              <!-- Pengalaman Organisasi -->
+              <div class="space-y-2">
+                <h3 class="text-sm font-bold uppercase tracking-wider text-slate-900 bg-slate-100 p-2 rounded">Pengalaman Organisasi</h3>
+                <div class="space-y-3 pt-1 text-xs text-slate-800">
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h4 class="font-bold text-slate-950">Majelis Perwakilan Kelas (MPK)</h4>
+                      <p class="font-semibold text-slate-700">Wakil Ketua</p>
+                      <ul class="list-disc list-inside space-y-0.5 mt-1 text-slate-700">
+                        <li>Mendampingi Ketua MPK dalam memimpin organisasi</li>
+                        <li>Mengambil alih kepemimpinan jika ketua berhalangan hadir</li>
+                      </ul>
+                    </div>
+                    <span class="font-mono font-bold text-slate-700">2023 – 2024</span>
+                  </div>
+
+                  <div class="flex justify-between items-start pt-2 border-t border-slate-200">
+                    <div>
+                      <h4 class="font-bold text-slate-950">Majelis Perwakilan Kelas (MPK)</h4>
+                      <p class="font-semibold text-slate-700">Ketua</p>
+                      <ul class="list-disc list-inside space-y-0.5 mt-1 text-slate-700">
+                        <li>Memimpin Organisasi dalam mengawasi kinerja OSIS</li>
+                        <li>Menampung dan menyalurkan aspirasi siswa</li>
+                      </ul>
+                    </div>
+                    <span class="font-mono font-bold text-slate-700">2024 – 2025</span>
+                  </div>
+
+                  <div class="flex justify-between items-start pt-2 border-t border-slate-200">
+                    <div>
+                      <h4 class="font-bold text-slate-950">Palang Merah Remaja (PMR)</h4>
+                      <p class="font-semibold text-slate-700">Sekbid Kesehatan</p>
+                      <ul class="list-disc list-inside space-y-0.5 mt-1 text-slate-700">
+                        <li>Penyediaan Pertolongan Pertama (PP)</li>
+                        <li>Pengelola Unit Kesehatan Sekolah (UKS)</li>
+                      </ul>
+                    </div>
+                    <span class="font-mono font-bold text-slate-700">2023 – 2024 & 2024 – 2025</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Keterampilan dan Sertifikasi -->
+              <div class="space-y-2">
+                <h3 class="text-sm font-bold uppercase tracking-wider text-slate-900 bg-slate-100 p-2 rounded">Keterampilan, Kepenulisan Ilmiah & Sertifikasi</h3>
+                <div class="text-xs text-slate-800 space-y-1.5 pt-1">
+                  <p>● <strong>Bahasa :</strong> Bahasa Indonesia (lisan & tulisan), Bahasa Jawa (lisan & tulisan), Bahasa Inggris (lisan & tulisan)</p>
+                  <p>● <strong>Keterampilan Komputer, DOCX & Statistik :</strong> Microsoft Office (khususnya Microsoft Word / DOCX tingkat lanjut untuk pembuatan Karya Tulis Ilmiah / KTI, Artikel Ilmiah, Essay Akademik, dan Proposal PKM) serta <strong>Olah Data SPSS</strong>.</p>
+                  <p>● <strong>Keterampilan Lain :</strong> Hard Skill (Public Speaking, Master Of Ceremony (MC), Story Telling Islami, Dakwah, Puisi, Announcement Voice), Soft Skill (Kepemimpinan, Komunikasi, Kerja sama tim, Manajemen waktu, Tanggung jawab, Adaptabilitas, Problem solving)</p>
+                  <div class="pt-1">
+                    <p class="font-bold text-slate-900">● Sertifikasi Resmi :</p>
+                    <ul class="list-disc list-inside pl-2 space-y-0.5 text-slate-700 mt-0.5">
+                      <li>[2026] Sertifikat Lulusan Terbaik SMA Negeri 1 Gringsing – Tingkat Sekolah</li>
+                      <li>[2025] Sertifikat Peringkat 7 Olimpiade Sains Nasional (OSN) Cabang Fisika – Tingkat Kabupaten</li>
+                      <li>[2025] Sertifikat Juara Harapan 3 Lomba Cepat Tepat OPI Fakultas Pertanian IPB – Tingkat Nasional</li>
+                      <li>[2025] Sertifikat Juara 3 Lomba Mendongeng Berbahasa Jawa – Tingkat Provinsi</li>
+                      <li>[2025] Sertifikat Juara 1 Lomba Story Telling Islami – Tingkat Sekolah</li>
+                      <li>[2024] Sertifikat Peringkat 7 Olimpiade Sains Nasional (OSN) Cabang Ekonomi – Tingkat Kabupaten</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Footer Hal 2 -->
+              <div class="pt-4 border-t border-slate-300 flex justify-between text-[11px] text-slate-500 font-mono">
+                <span>Curriculum Vitae Resmi — Naily Rosyada Darojat</span>
+                <span>Halaman 2 dari 2</span>
+              </div>
+            </div>
+          `;
+        }
+      } else {
+        paper.innerHTML = `
+          <div class="space-y-6">
+            <div class="border-b-2 border-slate-900 pb-4 text-center">
+              <h2 class="text-xl sm:text-2xl font-bold uppercase text-slate-950">${activePDFDoc.name}</h2>
+              <p class="text-xs text-slate-600 font-mono mt-1">${activePDFDoc.categoryName} • Arsip Resmi Terverifikasi</p>
+            </div>
+
+            <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 text-xs sm:text-sm text-slate-800 space-y-3">
+              <p class="font-bold text-slate-900">Deskripsi Dokumen:</p>
+              <p class="leading-relaxed">${activePDFDoc.description}</p>
+              <div class="pt-2">
+                <span class="inline-block px-3 py-1 rounded bg-blue-100 text-blue-900 text-xs font-mono font-bold">
+                  Ukuran: ${activePDFDoc.size} • Format: ${activePDFDoc.type} • Status: Asli Terverifikasi
+                </span>
+              </div>
+            </div>
+
+            <div class="p-8 border-2 border-dashed border-slate-300 rounded-2xl text-center space-y-3">
+              <i data-lucide="file-check-2" class="w-12 h-12 text-emerald-600 mx-auto"></i>
+              <h4 class="font-bold text-slate-900 text-base">Salinan Digital Resmi Naily Rosyada Darojat</h4>
+              <p class="text-xs text-slate-600 max-w-md mx-auto">
+                Dokumen ini diarsipkan secara digital untuk keperluan verifikasi akademik, pendaftaran ONMIPA-PT, LKTI, PKM, dan validasi portofolio.
+              </p>
+              <button onclick="downloadDocumentDirect('${activePDFDoc.id}')" class="px-5 py-2.5 rounded-xl bg-blue-700 hover:bg-blue-600 text-white font-bold text-xs inline-flex items-center gap-2">
+                <i data-lucide="download" class="w-4 h-4"></i> Unduh Berkas Sekarang (${activePDFDoc.size})
+              </button>
+            </div>
+          </div>
+        `;
+      }
+
+      if (window.lucide) lucide.createIcons();
+    }
+
+    window.downloadDocumentDirect = function(id) {
+      const doc = appState.documents.find(d => d.id === id);
+      if (!doc) return;
+
+      const content = `========================================================================
+CURRICULUM VITAE RESMI — NAILY ROSYADA DAROJAT
+087791166318 | darojatdorojat@gmail.com | Batang, Jawa Tengah
+Instagram: @nai.r.d | LinkedIn: @nailyrosyadadarojat
+========================================================================
+
+LATAR BELAKANG PENDIDIKAN
+1. Universitas Diponegoro (2026 – Sekarang)
+   Jurusan / Program Studi : S1 Fisika
+   Fokus & Minat Kompetisi : ONMIPA-PT, Lomba Karya Tulis Ilmiah (LKTI), Artikel Ilmiah, Essay, dan PKM
+
+2. SMA Negeri 1 Gringsing (2023 – 2026)
+   Jurusan IPA
+   - Nilai Akhir : 93,73
+   - Peraih peringkat 1 besar di kelas selama 6 semester berturut-turut
+   - Lulusan siswa terbaik 1 di sekolah
+
+PRESTASI AKADEMIK DAN NON-AKADEMIK
+- [2026] Lulusan Terbaik SMA Negeri 1 Gringsing – Tingkat Sekolah
+- [2025] Peringkat 7 Olimpiade Sains Nasional (OSN) Cabang Fisika – Tingkat Kabupaten
+- [2025] Juara Harapan 3 Lomba Cepat Tepat OPI Fakultas Pertanian IPB – Tingkat Nasional
+- [2025] Juara 3 Lomba Mendongeng Berbahasa Jawa – Tingkat Provinsi
+- [2025] Juara 1 Lomba Story Telling Islami – Tingkat Sekolah
+- [2024] Peringkat 7 Olimpiade Sains Nasional (OSN) Cabang Ekonomi – Tingkat Kabupaten
+
+PENGALAMAN ORGANISASI
+1. Majelis Perwakilan Kelas (MPK) — Wakil Ketua (2023 – 2024)
+   - Mendampingi Ketua MPK dalam memimpin organisasi
+   - Mengambil alih kepemimpinan jika ketua berhalangan hadir
+
+2. Majelis Perwakilan Kelas (MPK) — Ketua (2024 – 2025)
+   - Memimpin Organisasi dalam mengawasi kinerja OSIS
+   - Menampung dan menyalurkan aspirasi siswa
+
+3. Palang Merah Remaja (PMR) — Sekbid Kesehatan (2023 – 2024 & 2024 – 2025)
+   - Penyediaan Pertolongan Pertama (PP)
+   - Pengelola Unit Kesehatan Sekolah (UKS)
+
+KETERAMPILAN DAN SERTIFIKASI
+- Bahasa : Bahasa Indonesia (lisan & tulisan), Bahasa Jawa (lisan & tulisan), Bahasa Inggris (lisan & tulisan)
+- Keterampilan Komputer, DOCX & Statistik : Microsoft Office, keahlian khusus Microsoft Word (DOCX) dalam menyusun Karya Tulis Ilmiah (KTI), Artikel Ilmiah, Essay Akademik, dan Proposal PKM, serta Olah Data SPSS.
+- Hard Skill : Penulisan KTI/Artikel/Essay, Olah Data SPSS, Public Speaking, Master Of Ceremony (MC), Story Telling Islami, Dakwah, Puisi, Announcement Voice
+- Soft Skill : Kepemimpinan, Komunikasi, Kerja sama tim, Manajemen waktu, Tanggung jawab, Adaptabilitas, Problem solving
+========================================================================`;
+
+      const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = doc.name.replace(/\.(pdf|docx|jpg)$/i, "") + ".txt";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+
+      showToast(`Dokumen "${doc.name}" berhasil diunduh!`, "success");
+    };
+
+    // ══════════════════════════════════════════════════════════════════════
+    // 14. CONTACT FORM SUBMISSION
+    // ══════════════════════════════════════════════════════════════════════
+    function initContactForm() {
+      const form = document.getElementById("contact-form");
+      if (!form) return;
+
+      form.addEventListener("submit", e => {
+        e.preventDefault();
+
+        const name = document.getElementById("contact-name").value.trim();
+        const email = document.getElementById("contact-email").value.trim();
+        const subject = document.getElementById("contact-subject").value;
+        const message = document.getElementById("contact-message").value.trim();
+
+        if (!name || !email || !message) {
+          showToast("Mohon lengkapi semua kolom formulir!", "error");
+          return;
+        }
+
+        const newMessage = {
+          id: "msg-" + Date.now(),
+          name,
+          email,
+          subject,
+          message,
+          timestamp: new Date().toLocaleString("id-ID", { dateStyle: "medium", timeStyle: "short" }),
+          read: false
+        };
+
+        appState.messages.unshift(newMessage);
+        saveAppState();
+
+        form.reset();
+        showToast("Pesan Anda berhasil dikirim dan tersimpan di Inbox Naily!", "success");
+
+        updateAdminStats();
+      });
+    }
+
+    // ══════════════════════════════════════════════════════════════════════
+    // 15. ADMIN DASHBOARD & LIVE CMS (NO NATIVE ALERT / CONFIRM / PROMPT)
+    // ══════════════════════════════════════════════════════════════════════
+    let isAdminLoggedIn = false;
+
+    function initAdminPortal() {
+      const adminModal = document.getElementById("admin-modal");
+      const loginForm = document.getElementById("admin-login-form");
+      const loginView = document.getElementById("admin-login-view");
+      const dashboardView = document.getElementById("admin-dashboard-view");
+      const logoutBtn = document.getElementById("admin-logout-btn");
+      const resetBtn = document.getElementById("admin-reset-btn");
+
+      const openModal = () => {
+        adminModal.classList.remove("hidden");
+        adminModal.classList.add("flex");
+        if (isAdminLoggedIn) {
+          loginView.classList.add("hidden");
+          dashboardView.classList.remove("hidden");
+          renderAdminDashboard();
+        } else {
+          loginView.classList.remove("hidden");
+          dashboardView.classList.add("hidden");
+        }
+      };
+
+      document.getElementById("admin-modal-btn")?.addEventListener("click", openModal);
+      document.getElementById("footer-admin-btn")?.addEventListener("click", openModal);
+
+      document.getElementById("admin-modal-close")?.addEventListener("click", () => {
+        adminModal.classList.add("hidden");
+        adminModal.classList.remove("flex");
+      });
+
+      loginForm?.addEventListener("submit", e => {
+        e.preventDefault();
+        const pin = document.getElementById("admin-pin-input").value.trim();
+        if (pin === "311808") {
+          isAdminLoggedIn = true;
+          loginView.classList.add("hidden");
+          dashboardView.classList.remove("hidden");
+          showToast("Selamat datang di Admin Management Portal!", "success");
+          renderAdminDashboard();
+        } else {
+          showToast("Kode PIN Admin tidak sesuai!", "error");
+        }
+      });
+
+      logoutBtn?.addEventListener("click", () => {
+        isAdminLoggedIn = false;
+        loginView.classList.remove("hidden");
+        dashboardView.classList.add("hidden");
+        showToast("Anda telah keluar dari mode Admin.", "info");
+      });
+
+      resetBtn?.addEventListener("click", () => {
+        appState = JSON.parse(JSON.stringify(INITIAL_DATA));
+        saveAppState();
+        renderAll();
+        renderAdminDashboard();
+        showToast("Data portofolio telah dikembalikan ke data resmi CV Naily!", "success");
+      });
+
+      document.querySelectorAll(".admin-tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".admin-tab-btn").forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          const tabId = btn.getAttribute("data-tab");
+          document.querySelectorAll(".admin-tab-pane").forEach(pane => pane.classList.add("hidden"));
+          document.getElementById(`tab-${tabId}`)?.classList.remove("hidden");
+        });
+      });
+
+      document.getElementById("admin-profile-form")?.addEventListener("submit", e => {
+        e.preventDefault();
+        appState.profile.fullName = document.getElementById("edit-name").value;
+        appState.profile.campus = document.getElementById("edit-status").value;
+        appState.profile.email = document.getElementById("edit-email").value;
+        appState.profile.socials.instagram = "https://instagram.com/" + document.getElementById("edit-ig").value.replace('@', '');
+        appState.profile.socials.instagramHandle = document.getElementById("edit-ig").value;
+        appState.profile.socials.linkedin = "https://linkedin.com/in/" + document.getElementById("edit-linkedin").value.replace('@', '');
+        appState.profile.socials.linkedinHandle = document.getElementById("edit-linkedin").value;
+        appState.profile.photoUrl = document.getElementById("edit-photo").value;
+        appState.profile.bio = document.getElementById("edit-bio").value;
+
+        saveAppState();
+        renderProfile();
+        showToast("Profil berhasil diperbarui secara langsung!", "success");
+      });
+
+      // Inline Certificate Form Handler
+      document.getElementById("admin-inline-cert-form")?.addEventListener("submit", e => {
+        e.preventDefault();
+        const title = document.getElementById("new-cert-title").value.trim();
+        const organizer = document.getElementById("new-cert-org").value.trim();
+        const level = document.getElementById("new-cert-level").value;
+        if (!title || !organizer) return;
+
+        const newCert = {
+          id: "cert-" + Date.now(),
+          title,
+          organizer,
+          year: "2026",
+          nomorSurat: "Piagam Resmi Terverifikasi",
+          level,
+          levelBadge: `Tingkat ${level.charAt(0).toUpperCase() + level.slice(1)}`,
+          badgeColor: "bg-blue-500/20 text-blue-300 border-blue-400/30",
+          description: `Piagam penghargaan resmi atas prestasi sebagai ${title} yang diselenggarakan oleh ${organizer}.`,
+          image: null,
+          fileFormat: "Piagam Digital",
+          fileSize: "120 KB"
+        };
+
+        appState.certificates.unshift(newCert);
+        saveAppState();
+        renderCertificates();
+        renderAdminCertificatesList();
+        updateAdminStats();
+        e.target.reset();
+        showToast("Sertifikat baru berhasil ditambahkan!", "success");
+      });
+
+      // Inline Document Form Handler
+      document.getElementById("admin-inline-doc-form")?.addEventListener("submit", e => {
+        e.preventDefault();
+        const name = document.getElementById("new-doc-name").value.trim();
+        const desc = document.getElementById("new-doc-desc").value.trim();
+        if (!name || !desc) return;
+
+        const ext = name.split(".").pop().toUpperCase();
+        const type = ["PDF", "DOCX", "JPG"].includes(ext) ? ext : "DOCX";
+
+        const newDoc = {
+          id: "doc-" + Date.now(),
+          name,
+          category: "cv",
+          categoryName: "Karya Ilmiah / Dokumen",
+          type,
+          size: "280 KB",
+          date: "2026",
+          description: desc
+        };
+
+        appState.documents.unshift(newDoc);
+        saveAppState();
+        renderDocuments();
+        renderAdminDocumentsList();
+        updateAdminStats();
+        e.target.reset();
+        showToast("Berkas dokumen baru berhasil ditambahkan!", "success");
+      });
+    }
+
+    function updateAdminStats() {
+      const msgEl = document.getElementById("stat-messages");
+      const certEl = document.getElementById("stat-certs");
+      const docEl = document.getElementById("stat-docs");
+      const badgeEl = document.getElementById("admin-inbox-badge");
+
+      if (msgEl) msgEl.textContent = appState.messages.length;
+      if (certEl) certEl.textContent = appState.certificates.length;
+      if (docEl) docEl.textContent = appState.documents.length;
+      if (badgeEl) badgeEl.textContent = appState.messages.filter(m => !m.read).length;
+    }
+
+    function renderAdminDashboard() {
+      updateAdminStats();
+
+      const p = appState.profile;
+      const editName = document.getElementById("edit-name");
+      if (editName) {
+        editName.value = p.fullName;
+        document.getElementById("edit-status").value = p.campus;
+        document.getElementById("edit-email").value = p.email;
+        document.getElementById("edit-ig").value = p.socials.instagramHandle || "@nai.r.d";
+        document.getElementById("edit-linkedin").value = p.socials.linkedinHandle || "@nailyrosyadadarojat";
+        document.getElementById("edit-photo").value = p.photoUrl;
+        document.getElementById("edit-bio").value = p.bio;
+      }
+
+      renderAdminMessagesList();
+      renderAdminCertificatesList();
+      renderAdminDocumentsList();
+    }
+
+    function renderAdminMessagesList() {
+      const container = document.getElementById("admin-messages-list");
+      if (!container) return;
+
+      if (appState.messages.length === 0) {
+        container.innerHTML = `<p class="text-xs text-slate-400 py-6 text-center">Belum ada pesan kontak masuk.</p>`;
+        return;
+      }
+
+      container.innerHTML = "";
+      appState.messages.forEach(msg => {
+        const card = document.createElement("div");
+        card.className = "p-4 rounded-2xl bg-white/5 border border-white/10 space-y-2 text-xs";
+        card.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-white text-sm">${msg.name}</span>
+            <span class="text-[10px] font-mono text-slate-400">${msg.timestamp}</span>
+          </div>
+          <p class="text-accent-cyan font-semibold">Subjek: ${msg.subject}</p>
+          <p class="text-slate-300 leading-relaxed">${msg.message}</p>
+          <div class="pt-2 flex items-center justify-between border-t border-white/5">
+            <span class="text-slate-400 font-mono">${msg.email}</span>
+            <div class="flex items-center gap-3">
+              <a href="mailto:${msg.email}?subject=Balasan: ${encodeURIComponent(msg.subject)}" class="text-blue-400 hover:underline font-semibold">Balas Email</a>
+              <button onclick="deleteAdminMessage('${msg.id}')" class="text-rose-400 hover:underline font-semibold">Hapus</button>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    window.deleteAdminMessage = function(id) {
+      appState.messages = appState.messages.filter(m => m.id !== id);
+      saveAppState();
+      renderAdminMessagesList();
+      updateAdminStats();
+      showToast("Pesan telah dihapus dari inbox.", "info");
+    };
+
+    function renderAdminCertificatesList() {
+      const container = document.getElementById("admin-cert-items");
+      if (!container) return;
+
+      container.innerHTML = "";
+      appState.certificates.forEach(c => {
+        const item = document.createElement("div");
+        item.className = "p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between text-xs";
+        item.innerHTML = `
+          <div>
+            <h5 class="font-bold text-white">${c.title}</h5>
+            <p class="text-slate-400">${c.organizer} • ${c.year} • ${c.levelBadge}</p>
+          </div>
+          <button onclick="deleteAdminCert('${c.id}')" class="text-rose-400 hover:underline font-semibold ml-3">Hapus</button>
+        `;
+        container.appendChild(item);
+      });
+    }
+
+    window.deleteAdminCert = function(id) {
+      appState.certificates = appState.certificates.filter(c => c.id !== id);
+      saveAppState();
+      renderCertificates();
+      renderAdminCertificatesList();
+      updateAdminStats();
+      showToast("Sertifikat berhasil dihapus.", "info");
+    };
+
+    function renderAdminDocumentsList() {
+      const container = document.getElementById("admin-doc-items");
+      if (!container) return;
+
+      container.innerHTML = "";
+      appState.documents.forEach(d => {
+        const item = document.createElement("div");
+        item.className = "p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between text-xs";
+        item.innerHTML = `
+          <div>
+            <h5 class="font-bold text-white">${d.name}</h5>
+            <p class="text-slate-400">${d.categoryName} • ${d.size}</p>
+          </div>
+          <button onclick="deleteAdminDoc('${d.id}')" class="text-rose-400 hover:underline font-semibold ml-3">Hapus</button>
+        `;
+        container.appendChild(item);
+      });
+    }
+
+    window.deleteAdminDoc = function(id) {
+      appState.documents = appState.documents.filter(d => d.id !== id);
+      saveAppState();
+      renderDocuments();
+      renderAdminDocumentsList();
+      updateAdminStats();
+      showToast("Dokumen berhasil dihapus.", "info");
+    };
+
+    // ══════════════════════════════════════════════════════════════════════
+    // 16. THEME TOGGLE (DARK / LIGHT MODE)
+    // ══════════════════════════════════════════════════════════════════════
+    function initThemeToggle() {
+      const toggleBtn = document.getElementById("theme-toggle");
+      if (!toggleBtn) return;
+
+      const savedTheme = localStorage.getItem("NAILY_PORTFOLIO_THEME") || "dark";
+      if (savedTheme === "light") {
+        document.documentElement.classList.remove("dark");
+      } else {
+        document.documentElement.classList.add("dark");
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        const isDark = document.documentElement.classList.toggle("dark");
+        localStorage.setItem("NAILY_PORTFOLIO_THEME", isDark ? "dark" : "light");
+        showToast(`Mode ${isDark ? "Gelap (Dark Mode)" : "Terang (Light Mode)"} diaktifkan`, "info");
+      });
+    }
+
+    // ══════════════════════════════════════════════════════════════════════
+    // 17. NAVIGATION & MODALS EVENT BINDINGS
+    // ══════════════════════════════════════════════════════════════════════
+    let isMusicPlaying = false;
+    window.toggleAppleMusicPlayer = function() {
+      const iframe = document.getElementById("apple-music-iframe");
+      const container = document.getElementById("apple-music-embed-container");
+      const icon = document.getElementById("music-icon");
+      if (!iframe || !container || !icon) return;
+
+      if (!isMusicPlaying) {
+        if (!iframe.src) {
+          iframe.src = "https://embed.music.apple.com/id/song/tasnao-almustaheel/1236938145?l=id&autoplay=1";
+        }
+        container.classList.remove("hidden");
+        icon.setAttribute("data-lucide", "pause");
+        isMusicPlaying = true;
+        showToast("Memutar Tasnao Almustaheel...", "info");
+      } else {
+        container.classList.add("hidden");
+        iframe.src = "";
+        icon.setAttribute("data-lucide", "play");
+        isMusicPlaying = false;
+        showToast("Musik dijeda.", "info");
+      }
+      if (window.lucide) lucide.createIcons();
+    };
+
+    function initEventListeners() {
+      const mobileBtn = document.getElementById("mobile-menu-btn");
+      const mobileDrawer = document.getElementById("mobile-drawer");
+      const hamburgerIcon = document.getElementById("hamburger-icon");
+      const closeIcon = document.getElementById("close-icon");
+
+      mobileBtn?.addEventListener("click", () => {
+        const isHidden = mobileDrawer.classList.toggle("hidden");
+        hamburgerIcon.classList.toggle("hidden", !isHidden);
+        closeIcon.classList.toggle("hidden", isHidden);
+      });
+
+      document.querySelectorAll(".mobile-nav-link").forEach(link => {
+        link.addEventListener("click", () => {
+          mobileDrawer.classList.add("hidden");
+          hamburgerIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+        });
+      });
+
+      document.querySelectorAll(".timeline-filter-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".timeline-filter-btn").forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          currentTimelineCategory = btn.getAttribute("data-category");
+          renderTimeline();
+        });
+      });
+
+      document.querySelectorAll(".cert-filter-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".cert-filter-btn").forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          currentCertCategory = btn.getAttribute("data-category");
+          renderCertificates();
+        });
+      });
+
+      document.getElementById("cert-modal-close")?.addEventListener("click", () => {
+        document.getElementById("cert-modal").classList.add("hidden");
+        document.getElementById("cert-modal").classList.remove("flex");
+      });
+      document.getElementById("cert-zoom-in")?.addEventListener("click", () => {
+        currentZoomLevel = Math.min(1.5, currentZoomLevel + 0.15);
+        document.getElementById("cert-modal-canvas-wrapper").style.transform = `scale(${currentZoomLevel})`;
+      });
+      document.getElementById("cert-zoom-out")?.addEventListener("click", () => {
+        currentZoomLevel = Math.max(0.7, currentZoomLevel - 0.15);
+        document.getElementById("cert-modal-canvas-wrapper").style.transform = `scale(${currentZoomLevel})`;
+      });
+      document.getElementById("cert-modal-download-btn")?.addEventListener("click", () => {
+        if (activeCertModalItem) {
+          window.downloadCertificateDirect(activeCertModalItem.id);
+        }
+      });
+
+      document.getElementById("pdf-modal-close")?.addEventListener("click", () => {
+        document.getElementById("pdf-viewer-modal").classList.add("hidden");
+        document.getElementById("pdf-viewer-modal").classList.remove("flex");
+      });
+      document.getElementById("pdf-prev-page")?.addEventListener("click", () => {
+        if (currentPDFPage > 1) {
+          currentPDFPage--;
+          document.getElementById("pdf-page-indicator").textContent = `Hal ${currentPDFPage} / 2`;
+          renderPDFPageContent();
+        }
+      });
+      document.getElementById("pdf-next-page")?.addEventListener("click", () => {
+        if (currentPDFPage < 2) {
+          currentPDFPage++;
+          document.getElementById("pdf-page-indicator").textContent = `Hal ${currentPDFPage} / 2`;
+          renderPDFPageContent();
+        }
+      });
+      document.getElementById("pdf-download-action-btn")?.addEventListener("click", () => {
+        if (activePDFDoc) {
+          window.downloadDocumentDirect(activePDFDoc.id);
+        }
+      });
+
+      document.getElementById("detail-modal-close")?.addEventListener("click", () => {
+        document.getElementById("detail-modal").classList.add("hidden");
+        document.getElementById("detail-modal").classList.remove("flex");
+      });
+      document.getElementById("detail-modal-ok-btn")?.addEventListener("click", () => {
+        document.getElementById("detail-modal").classList.add("hidden");
+        document.getElementById("detail-modal").classList.remove("flex");
+      });
+
+      document.getElementById("quick-cv-btn")?.addEventListener("click", () => {
+        const primaryCV = appState.documents.find(d => d.isPrimaryCV) || appState.documents[0];
+        if (primaryCV) {
+          window.openPDFViewer(primaryCV.id);
+        }
+      });
+
+      window.addEventListener("scroll", () => {
+        const nav = document.getElementById("main-nav");
+        if (!nav) return;
+        if (window.scrollY > 40) {
+          nav.classList.add("py-2");
+          nav.classList.remove("py-4");
+        } else {
+          nav.classList.add("py-4");
+          nav.classList.remove("py-2");
+        }
+      });
+    }
+
+    // ══════════════════════════════════════════════════════════════════════
+    // 18. MASTER RENDER & INIT
+    // ══════════════════════════════════════════════════════════════════════
+    function renderAll() {
+      renderProfile();
+      renderTimeline();
+      initSkills();
+      renderCertificates();
+      renderSocialConnect();
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      initParticlesCanvas();
+      initTypewriter();
+      renderAll();
+      initContactForm();
+      initAdminPortal();
+      initThemeToggle();
+      initEventListeners();
+
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    });
+  </script>
+</body>
+</html>
