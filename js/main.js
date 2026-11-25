@@ -1676,8 +1676,14 @@ KETERAMPILAN DAN SERTIFIKASI
       initSkills();
       renderCertificates();
       renderSocialConnect();
+      renderDocuments();
     }
 
+    function initDocumentControls(){
+      document.querySelectorAll(".doc-filter-btn").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll(".doc-filter-btn").forEach(b=>b.classList.remove("active"));btn.classList.add("active");currentDocFilter=btn.dataset.filter||"all";renderDocuments();}));
+      document.getElementById("document-search")?.addEventListener("input",e=>{documentSearchQuery=e.target.value.trim();renderDocuments();});
+      document.getElementById("doc-view-toggle")?.addEventListener("click",e=>{isDocGridView=!isDocGridView;e.currentTarget.textContent=isDocGridView?"Tampilan daftar":"Tampilan grid";renderDocuments();});
+    }
     document.addEventListener("DOMContentLoaded", () => {
       initParticlesCanvas();
       initTypewriter();
@@ -1686,6 +1692,7 @@ KETERAMPILAN DAN SERTIFIKASI
       initAdminPortal();
       initThemeToggle();
       initEventListeners();
+      initDocumentControls();
 
       if (window.lucide) {
         lucide.createIcons();
