@@ -1,5 +1,87 @@
 
-// 2. HIGH-RESOLUTION OFFICIAL CERTIFICATE SVG DATA-URL GENERATOR
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              950: '#030712',
+              900: '#060d19',
+              850: '#091426',
+              800: '#0d1d36',
+              700: '#14294d',
+              600: '#1d396a',
+            },
+            accent: {
+              cyan: '#00e5ff',
+              blue: '#2563eb',
+              lightBlue: '#38bdf8',
+              glow: 'rgba(0, 229, 255, 0.15)',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          animation: {
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'float': 'float 6s ease-in-out infinite',
+            'spin-slow': 'spin 24s linear infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' },
+            }
+          }
+        }
+      }
+    }
+  
+
+    /**
+     * NAILY ROSYADA DAROJAT — OFFICIAL PORTFOLIO APPLICATION
+     * S1 Fisika Universitas Diponegoro 2026
+     * Fixed all script errors, added high-res SVG Certificate Generator,
+     * complete CV school/organization/volunteer records, and KTI/Essay/PKM/DOCX skills.
+     */
+
+    // 1. FALLBACK PORTRAIT SVG GENERATOR (If assets/photo-naily.jpg is not found in preview environment)
+    window.getFallbackPortraitDataUrl = function() {
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+        <defs>
+          <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#991b1b"/>
+            <stop offset="60%" stop-color="#7f1d1d"/>
+            <stop offset="100%" stop-color="#091426"/>
+          </linearGradient>
+          <linearGradient id="hijabGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#1e293b"/>
+            <stop offset="100%" stop-color="#0f172a"/>
+          </linearGradient>
+        </defs>
+        <rect width="600" height="800" fill="url(#bgGrad)"/>
+        <circle cx="300" cy="260" r="220" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" stroke-dasharray="6 6"/>
+        <!-- Formal Blazer & White Shirt -->
+        <path d="M110,800 C110,600 200,530 300,530 C400,530 490,600 490,800 Z" fill="#0f172a"/>
+        <polygon points="250,530 350,530 300,680" fill="#f8fafc"/>
+        <!-- Formal Hijab Silhouette -->
+        <path d="M175,330 C175,180 425,180 425,330 C435,450 400,555 300,565 C200,555 165,450 175,330 Z" fill="url(#hijabGrad)"/>
+        <!-- Face Silhouette -->
+        <ellipse cx="300" cy="325" rx="76" ry="92" fill="#fde68a" opacity="0.92"/>
+        <!-- Subtle Smile & Features -->
+        <path d="M272,305 Q282,298 292,305" fill="none" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+        <path d="M308,305 Q318,298 328,305" fill="none" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+        <path d="M285,358 Q300,370 315,358" fill="none" stroke="#991b1b" stroke-width="3" stroke-linecap="round"/>
+        <!-- Name Pin -->
+        <rect x="345" y="620" width="75" height="22" rx="4" fill="#fbbf24"/>
+        <text x="382" y="635" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="#0f172a">NAILY R.D.</text>
+      </svg>`;
+      return "data:image/svg+xml;utf8," + encodeURIComponent(svg);
+    };
+
+    // 2. HIGH-RESOLUTION OFFICIAL CERTIFICATE SVG DATA-URL GENERATOR
     // Ensures every single certificate displays a crisp, realistic Indonesian Piagam Penghargaan
     // even when local JPG scans in assets/ are unavailable.
     window.generateCertificateVisualDataUrl = function(cert) {
@@ -360,43 +442,75 @@
     // ══════════════════════════════════════════════════════════════════════
     function initParticlesCanvas() {
       const canvas = document.getElementById("particles-canvas");
-      if (!canvas || window.matchMedia("(prefers-reduced-motion: reduce)").matches) { if(canvas) canvas.hidden=true; return; }
+      if (!canvas) return;
+
       const ctx = canvas.getContext("2d");
-      if (!ctx) return;
-      let width=0,height=0,frame=0,particles=[];
-      const mobile=window.innerWidth<768;
-      const particleCount=mobile?12:28;
-      const dpr=Math.min(window.devicePixelRatio||1,1.25);
-      function resize(){
-        width=window.innerWidth;height=window.innerHeight;
-        canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);
-        canvas.style.width=width+"px";canvas.style.height=height+"px";
-        ctx.setTransform(dpr,0,0,dpr,0,0);
+      let width, height;
+      let particles = [];
+      const particleCount = window.innerWidth < 768 ? 30 : 60;
+
+      function resize() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
       }
+      window.addEventListener("resize", resize);
       resize();
-      window.addEventListener("resize",resize,{passive:true});
-      class Particle{
-        constructor(){this.x=Math.random()*width;this.y=Math.random()*height;this.vx=(Math.random()-.5)*.35;this.vy=(Math.random()-.5)*.35;this.radius=Math.random()*1.4+.6;}
-        update(){this.x+=this.vx;this.y+=this.vy;if(this.x<0||this.x>width)this.vx*=-1;if(this.y<0||this.y>height)this.vy*=-1;}
-        draw(){ctx.beginPath();ctx.arc(this.x,this.y,this.radius,0,Math.PI*2);ctx.fillStyle="rgba(0,229,255,.34)";ctx.fill();}
+
+      class Particle {
+        constructor() {
+          this.x = Math.random() * width;
+          this.y = Math.random() * height;
+          this.vx = (Math.random() - 0.5) * 0.65;
+          this.vy = (Math.random() - 0.5) * 0.65;
+          this.radius = Math.random() * 2 + 0.8;
+        }
+        update() {
+          this.x += this.vx;
+          this.y += this.vy;
+          if (this.x < 0 || this.x > width) this.vx *= -1;
+          if (this.y < 0 || this.y > height) this.vy *= -1;
+        }
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+          ctx.fillStyle = "rgba(0, 229, 255, 0.42)";
+          ctx.fill();
+        }
       }
-      for(let i=0;i<particleCount;i++)particles.push(new Particle());
-      let paused=document.hidden;
-      function animate(){
-        if(paused)return;
-        ctx.clearRect(0,0,width,height);
-        for(let i=0;i<particles.length;i++){
-          const p=particles[i];p.update();p.draw();
-          for(let k=i+1;k<particles.length;k++){
-            const q=particles[k],dx=p.x-q.x,dy=p.y-q.y,distSq=dx*dx+dy*dy;
-            if(distSq<10000){const dist=Math.sqrt(distSq);ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);ctx.strokeStyle="rgba(0,229,255,"+(0.10*(1-dist/100))+")";ctx.lineWidth=.55;ctx.stroke();}
+
+      for (let i = 0; i < particleCount; i++) {
+        particles.push(new Particle());
+      }
+
+      function animate() {
+        ctx.clearRect(0, 0, width, height);
+
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+
+            if (dist < 125) {
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.strokeStyle = `rgba(0, 229, 255, ${0.14 * (1 - dist / 125)})`;
+              ctx.lineWidth = 0.7;
+              ctx.stroke();
+            }
           }
         }
-        frame=requestAnimationFrame(animate);
+
+        particles.forEach(p => {
+          p.update();
+          p.draw();
+        });
+
+        requestAnimationFrame(animate);
       }
-      function visibility(){paused=document.hidden;if(!paused){cancelAnimationFrame(frame);frame=requestAnimationFrame(animate);}else cancelAnimationFrame(frame);}
-      document.addEventListener("visibilitychange",visibility);
-      frame=requestAnimationFrame(animate);
+
+      animate();
     }
 
     // ══════════════════════════════════════════════════════════════════════
@@ -557,7 +671,7 @@
                 <span class="text-[11px] font-mono text-slate-400 uppercase tracking-wider">${catLabel}</span>
               </div>
               ${item.logo ? `<div class="education-logo-wrap"><img src="${item.logo}" alt="Logo ${item.institution}" class="education-logo" loading="lazy" /></div>` : ""}
-          <h4 class="text-base sm:text-lg font-bold text-white group-hover:text-accent-cyan transition-colors">${item.role}</h4>
+              <h4 class="text-base sm:text-lg font-bold text-white group-hover:text-accent-cyan transition-colors">${item.role}</h4>
               <p class="text-xs sm:text-sm text-blue-300 font-semibold mb-2">${item.institution}</p>
               <p class="text-xs sm:text-sm text-slate-200 leading-relaxed mb-3">${item.shortDesc}</p>
               
@@ -620,7 +734,7 @@
       socialItems.forEach(item => {
         const card = document.createElement("a");
         card.href = item.url;
-        card.target = "_blank";\n        card.rel = "noopener noreferrer";
+        card.target = "_blank";
         card.className = `p-6 rounded-3xl glass-card border border-white/10 ${item.color} flex flex-col items-center text-center space-y-4 group transition-all hover:scale-105 active:scale-95 shadow-xl`;
 
         card.innerHTML = `
@@ -1561,6 +1675,31 @@ KETERAMPILAN DAN SERTIFIKASI
     // ══════════════════════════════════════════════════════════════════════
     // 17. NAVIGATION & MODALS EVENT BINDINGS
     // ══════════════════════════════════════════════════════════════════════
+    let isMusicPlaying = false;
+    window.toggleAppleMusicPlayer = function() {
+      const iframe = document.getElementById("apple-music-iframe");
+      const container = document.getElementById("apple-music-embed-container");
+      const icon = document.getElementById("music-icon");
+      if (!iframe || !container || !icon) return;
+
+      if (!isMusicPlaying) {
+        if (!iframe.src) {
+          iframe.src = "https://embed.music.apple.com/id/song/tasnao-almustaheel/1236938145?l=id&autoplay=1";
+        }
+        container.classList.remove("hidden");
+        icon.setAttribute("data-lucide", "pause");
+        isMusicPlaying = true;
+        showToast("Memutar Tasnao Almustaheel...", "info");
+      } else {
+        container.classList.add("hidden");
+        iframe.src = "";
+        icon.setAttribute("data-lucide", "play");
+        isMusicPlaying = false;
+        showToast("Musik dijeda.", "info");
+      }
+      if (window.lucide) lucide.createIcons();
+    };
+
     function initEventListeners() {
       const mobileBtn = document.getElementById("mobile-menu-btn");
       const mobileDrawer = document.getElementById("mobile-drawer");
@@ -1679,14 +1818,8 @@ KETERAMPILAN DAN SERTIFIKASI
       initSkills();
       renderCertificates();
       renderSocialConnect();
-      renderDocuments();
     }
 
-    function initDocumentControls(){
-      document.querySelectorAll(".doc-filter-btn").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll(".doc-filter-btn").forEach(b=>b.classList.remove("active"));btn.classList.add("active");currentDocFilter=btn.dataset.filter||"all";renderDocuments();}));
-      document.getElementById("document-search")?.addEventListener("input",e=>{documentSearchQuery=e.target.value.trim();renderDocuments();});
-      document.getElementById("doc-view-toggle")?.addEventListener("click",e=>{isDocGridView=!isDocGridView;e.currentTarget.textContent=isDocGridView?"Tampilan daftar":"Tampilan grid";renderDocuments();});
-    }
     document.addEventListener("DOMContentLoaded", () => {
       initParticlesCanvas();
       initTypewriter();
@@ -1695,7 +1828,6 @@ KETERAMPILAN DAN SERTIFIKASI
       initAdminPortal();
       initThemeToggle();
       initEventListeners();
-      initDocumentControls();
 
       if (window.lucide) {
         lucide.createIcons();
