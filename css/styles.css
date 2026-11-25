@@ -284,3 +284,10 @@
     }
   
 .education-logo-wrap{display:flex;align-items:center;justify-content:flex-start;margin:0 0 1rem;padding:.75rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:1rem;width:max-content;max-width:100%;}.education-logo{width:76px;height:76px;object-fit:contain;}
+
+
+/* Responsive education timeline logos and cards */
+.education-logo-wrap{display:flex;align-items:center;justify-content:center;margin:0 0 1rem;padding:.75rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:1rem;width:96px;height:96px;max-width:100%;}
+.education-logo{width:100%;height:100%;max-width:76px;max-height:76px;object-fit:contain;}
+@media(max-width:640px){.education-logo-wrap{width:76px;height:76px;padding:.5rem;margin-bottom:.75rem;border-radius:.85rem}.education-logo{max-width:60px;max-height:60px}#timeline-list .glass-card{padding:1rem!important;max-width:100%;overflow-wrap:anywhere}#timeline-list{width:100%;min-width:0}}
+@media(min-width:641px){.education-logo-wrap{width:96px;height:96px}.education-logo{max-width:76px;max-height:76px}}
