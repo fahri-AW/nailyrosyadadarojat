@@ -1,0 +1,301 @@
+
+    /* ══════════════════════════════════════════════════════════════
+       NAILY ROSYADA DAROJAT — PORTFOLIO CORE STYLES
+       Modern, Sleek, Navy & Accent Cyan Aesthetic
+    ══════════════════════════════════════════════════════════════ */
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #030712;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #00e5ff;
+    }
+
+    /* Light Mode Overrides */
+    html:not(.dark) {
+      --bg-primary: #f8fafc;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --border-card: rgba(15, 23, 42, 0.1);
+      --text-main: #0f172a;
+      --text-sub: #475569;
+    }
+    html:not(.dark) body {
+      background-color: #f1f5f9 !important;
+      color: #0f172a !important;
+    }
+    html:not(.dark) .glass-nav {
+      background: rgba(255, 255, 255, 0.88) !important;
+      border-color: rgba(15, 23, 42, 0.1) !important;
+    }
+    html:not(.dark) .glass-card {
+      background: rgba(255, 255, 255, 0.88) !important;
+      border-color: rgba(15, 23, 42, 0.1) !important;
+      color: #0f172a !important;
+      box-shadow: 0 10px 30px -10px rgba(2, 132, 199, 0.08);
+    }
+    html:not(.dark) h1, html:not(.dark) h2, html:not(.dark) h3, html:not(.dark) h4, html:not(.dark) h5 {
+      color: #0f172a !important;
+    }
+    html:not(.dark) .text-slate-300, html:not(.dark) .text-slate-400, html:not(.dark) .text-slate-200 {
+      color: #334155 !important;
+    }
+    html:not(.dark) .bg-navy-950, html:not(.dark) .bg-navy-900, html:not(.dark) .bg-navy-850 {
+      background-color: #ffffff !important;
+    }
+    html:not(.dark) .border-white\/10, html:not(.dark) .border-white\/5, html:not(.dark) .border-white\/15 {
+      border-color: rgba(15, 23, 42, 0.1) !important;
+    }
+    html:not(.dark) .bg-white\/5, html:not(.dark) .bg-white\/10 {
+      background-color: rgba(15, 23, 42, 0.04) !important;
+    }
+    html:not(.dark) .quantum-formula-badge {
+      background: rgba(255, 255, 255, 0.92) !important;
+      border-color: rgba(2, 132, 199, 0.35) !important;
+      color: #0369a1 !important;
+      box-shadow: 0 8px 24px rgba(2, 132, 199, 0.12) !important;
+    }
+
+    /* Glassmorphism Styles */
+    .glass-nav {
+      background: rgba(6, 13, 25, 0.8);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .glass-card {
+      background: rgba(9, 20, 38, 0.68);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    /* Nav Link Hover effect */
+    .nav-link {
+      position: relative;
+      transition: all 0.25s ease;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: #00e5ff;
+      transition: all 0.25s ease;
+      transform: translateX(-50%);
+      border-radius: 9999px;
+    }
+    .nav-link:hover::after, .nav-link.active::after {
+      width: 65%;
+    }
+
+    /* Filter buttons */
+    .timeline-filter-btn, .cert-filter-btn, .doc-filter-pill {
+      background: rgba(255, 255, 255, 0.05);
+      color: #94a3b8;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .timeline-filter-btn:hover, .cert-filter-btn:hover, .doc-filter-pill:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+    }
+    .timeline-filter-btn.active, .cert-filter-btn.active, .doc-filter-pill.active {
+      background: linear-gradient(135deg, #2563eb, #00e5ff) !important;
+      color: #ffffff !important;
+      border-color: transparent !important;
+      box-shadow: 0 4px 15px rgba(0, 229, 255, 0.3) !important;
+    }
+
+    /* Admin Tabs */
+    .admin-tab-btn {
+      color: #94a3b8;
+    }
+    .admin-tab-btn:hover {
+      background: rgba(255, 255, 255, 0.05);
+      color: #ffffff;
+    }
+    .admin-tab-btn.active {
+      background: rgba(0, 229, 255, 0.15);
+      color: #00e5ff;
+      border: 1px solid rgba(0, 229, 255, 0.3);
+    }
+
+    /* Document List View item */
+    .doc-item-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      transition: all 0.2s ease;
+    }
+    .doc-item-list:hover {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: rgba(0, 229, 255, 0.3);
+      transform: translateX(4px);
+    }
+
+    /* Document Grid View item */
+    .doc-item-grid {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      transition: all 0.25s ease;
+    }
+    .doc-item-grid:hover {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: rgba(0, 229, 255, 0.3);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px -5px rgba(0, 229, 255, 0.12);
+    }
+
+    /* Spacetime Grid Background */
+    .spacetime-grid {
+      background-image: 
+        linear-gradient(to right, rgba(0, 229, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 229, 255, 0.035) 1px, transparent 1px);
+      background-size: 44px 44px;
+    }
+    html:not(.dark) .spacetime-grid {
+      background-image: 
+        linear-gradient(to right, rgba(2, 132, 199, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(2, 132, 199, 0.05) 1px, transparent 1px);
+    }
+
+    /* 3D Bohr Atom Orbit Rings */
+    .atom-orbit-container {
+      position: absolute;
+      inset: -32px;
+      pointer-events: none;
+      perspective: 1000px;
+    }
+    .atom-orbit {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 1.5px dashed rgba(0, 229, 255, 0.35);
+      box-shadow: 0 0 15px rgba(0, 229, 255, 0.12);
+      transform-style: preserve-3d;
+    }
+    .atom-orbit-1 {
+      transform: rotateX(65deg) rotateY(15deg);
+      animation: orbit-spin-1 12s linear infinite;
+    }
+    .atom-orbit-2 {
+      transform: rotateX(65deg) rotateY(75deg);
+      animation: orbit-spin-2 15s linear infinite;
+    }
+    .atom-orbit-3 {
+      transform: rotateX(65deg) rotateY(-45deg);
+      animation: orbit-spin-3 18s linear infinite;
+    }
+    @keyframes orbit-spin-1 {
+      0% { transform: rotateX(65deg) rotateY(15deg) rotateZ(0deg); }
+      100% { transform: rotateX(65deg) rotateY(15deg) rotateZ(360deg); }
+    }
+    @keyframes orbit-spin-2 {
+      0% { transform: rotateX(65deg) rotateY(75deg) rotateZ(0deg); }
+      100% { transform: rotateX(65deg) rotateY(75deg) rotateZ(360deg); }
+    }
+    @keyframes orbit-spin-3 {
+      0% { transform: rotateX(65deg) rotateY(-45deg) rotateZ(0deg); }
+      100% { transform: rotateX(65deg) rotateY(-45deg) rotateZ(360deg); }
+    }
+
+    /* Electron on Orbit */
+    .atom-electron {
+      position: absolute;
+      top: -4px;
+      left: 50%;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #00e5ff;
+      box-shadow: 0 0 12px #00e5ff, 0 0 20px #00e5ff;
+      transform: translateX(-50%);
+    }
+    .atom-electron-gold {
+      background: #fbbf24;
+      box-shadow: 0 0 12px #fbbf24, 0 0 20px #fbbf24;
+    }
+    .atom-electron-blue {
+      background: #60a5fa;
+      box-shadow: 0 0 12px #60a5fa, 0 0 20px #60a5fa;
+    }
+
+    /* Quantum Floating Formula Badge (Animated Decorative Elements) */
+    .quantum-formula-badge {
+      background: rgba(6, 13, 25, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(0, 229, 255, 0.28);
+      box-shadow: 0 8px 32px 0 rgba(0, 229, 255, 0.14);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: default;
+    }
+    .quantum-formula-badge:hover {
+      transform: translateY(-6px) scale(1.06);
+      border-color: rgba(0, 229, 255, 0.7);
+      box-shadow: 0 12px 36px 0 rgba(0, 229, 255, 0.32);
+    }
+
+    /* Floating Physics Formula Animation */
+    @keyframes physics-drift {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(1.5deg); }
+    }
+    @keyframes physics-drift-reverse {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(9px) rotate(-1.5deg); }
+    }
+    .animate-physics-drift {
+      animation: physics-drift 5.5s ease-in-out infinite;
+    }
+    .animate-physics-drift-reverse {
+      animation: physics-drift-reverse 6.5s ease-in-out infinite;
+    }
+
+    /* Subtle Physics Formula Ambient Watermark */
+    .formula-watermark {
+      user-select: none;
+      pointer-events: none;
+      font-family: 'JetBrains Mono', monospace;
+      opacity: 0.065;
+      color: #00e5ff;
+      letter-spacing: 1.5px;
+    }
+    html:not(.dark) .formula-watermark {
+      opacity: 0.055;
+      color: #0284c7;
+    }
+  
+/* Refined accessible responsive design layer */
+:root{--focus:#22d3ee;--line-subtle:rgba(148,163,184,.16);--radius-card:22px;--shadow-card:0 18px 60px rgba(0,0,0,.22)}
+html{scroll-padding-top:104px}body{min-width:320px;text-rendering:optimizeLegibility}
+a{text-underline-offset:4px}a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+button,a{-webkit-tap-highlight-color:transparent}button{cursor:pointer}img{max-width:100%}
+.glass-card{border:1px solid var(--line-subtle);border-radius:var(--radius-card);box-shadow:var(--shadow-card)}
+.glass-nav{border:1px solid rgba(148,163,184,.18);box-shadow:0 14px 42px rgba(0,0,0,.18)}
+.nav-link{white-space:nowrap}.nav-link:focus-visible::after{width:65%}
+.timeline-filter-btn,.cert-filter-btn,.doc-filter-pill,.admin-tab-btn{border-radius:999px;transition:background .2s ease,color .2s ease,border-color .2s ease}
+button:disabled{cursor:not-allowed;opacity:.55}input,textarea,select{max-width:100%}section[id]{scroll-margin-top:110px}
+html:not(.dark){color-scheme:light}
+html:not(.dark) .glass-nav{box-shadow:0 12px 34px rgba(15,23,42,.08)}
+html:not(.dark) .doc-item-list,html:not(.dark) .doc-item-grid{background:rgba(255,255,255,.82);border-color:rgba(15,23,42,.1)}
+@media(max-width:1024px){#main-nav{padding-left:12px;padding-right:12px}#main-nav>div{padding-left:14px;padding-right:14px}}
+@media(max-width:640px){body{font-size:15px}#main-nav{padding-top:10px}#main-nav>div{border-radius:17px}.glass-card{border-radius:18px}.doc-item-list{align-items:flex-start;gap:10px}button,a{touch-action:manipulation}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
