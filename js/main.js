@@ -176,7 +176,7 @@
         campus: "Universitas Diponegoro (Undip)",
         major: "Fisika (S1)",
         academicScore: "93,73 (Lulusan Terbaik 1)",
-        photoUrl: "assets/photo-naily.jpg",
+        photoUrl: "assets/logo-sman1-gringsing.svg",
         socials: {
           email: "mailto:darojatdorojat@gmail.com",
           instagram: "https://instagram.com/nai.r.d",
@@ -1675,31 +1675,6 @@ KETERAMPILAN DAN SERTIFIKASI
     // ══════════════════════════════════════════════════════════════════════
     // 17. NAVIGATION & MODALS EVENT BINDINGS
     // ══════════════════════════════════════════════════════════════════════
-    let isMusicPlaying = false;
-    window.toggleAppleMusicPlayer = function() {
-      const iframe = document.getElementById("apple-music-iframe");
-      const container = document.getElementById("apple-music-embed-container");
-      const icon = document.getElementById("music-icon");
-      if (!iframe || !container || !icon) return;
-
-      if (!isMusicPlaying) {
-        if (!iframe.src) {
-          iframe.src = "https://embed.music.apple.com/id/song/tasnao-almustaheel/1236938145?l=id&autoplay=1";
-        }
-        container.classList.remove("hidden");
-        icon.setAttribute("data-lucide", "pause");
-        isMusicPlaying = true;
-        showToast("Memutar Tasnao Almustaheel...", "info");
-      } else {
-        container.classList.add("hidden");
-        iframe.src = "";
-        icon.setAttribute("data-lucide", "play");
-        isMusicPlaying = false;
-        showToast("Musik dijeda.", "info");
-      }
-      if (window.lucide) lucide.createIcons();
-    };
-
     function initEventListeners() {
       const mobileBtn = document.getElementById("mobile-menu-btn");
       const mobileDrawer = document.getElementById("mobile-drawer");
