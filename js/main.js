@@ -176,7 +176,7 @@
         campus: "Universitas Diponegoro (Undip)",
         major: "Fisika (S1)",
         academicScore: "93,73 (Lulusan Terbaik 1)",
-        photoUrl: "assets/logo-sman1-gringsing.png",
+        photoUrl: "logo-sman1-gringsing.png",
         socials: {
           email: "mailto:darojatdorojat@gmail.com",
           instagram: "https://instagram.com/nai.r.d",
@@ -203,7 +203,7 @@
         },
         {
           id: "edu-sman1",
-          logo: "assets/logo-sman1-gringsing.png",
+          logo: "logo-sman1-gringsing.png",
           year: "2023 – 2026",
           category: "education",
           role: "Jurusan IPA — Lulusan Siswa Terbaik 1",
