@@ -670,7 +670,7 @@
                 <span class="text-xs font-mono font-bold text-accent-cyan px-3 py-0.5 rounded-full bg-accent-cyan/10 border border-accent-cyan/25">${item.year}</span>
                 <span class="text-[11px] font-mono text-slate-400 uppercase tracking-wider">${catLabel}</span>
               </div>
-              ${item.logo ? `<div class="education-logo-wrap"><img src="${item.logo}" alt="Logo ${item.institution}" class="education-logo" loading="lazy" /></div>` : ""}
+              ${item.logo ? `<div class="education-logo-wrap"><img src="${item.logo}" alt="Logo ${item.institution}" class="education-logo" loading="lazy" decoding="async" /></div>` : ""}
               <h4 class="text-base sm:text-lg font-bold text-white group-hover:text-accent-cyan transition-colors">${item.role}</h4>
               <p class="text-xs sm:text-sm text-blue-300 font-semibold mb-2">${item.institution}</p>
               <p class="text-xs sm:text-sm text-slate-200 leading-relaxed mb-3">${item.shortDesc}</p>
