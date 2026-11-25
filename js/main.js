@@ -358,75 +358,43 @@
     // ══════════════════════════════════════════════════════════════════════
     function initParticlesCanvas() {
       const canvas = document.getElementById("particles-canvas");
-      if (!canvas) return;
-
+      if (!canvas || window.matchMedia("(prefers-reduced-motion: reduce)").matches) { if(canvas) canvas.hidden=true; return; }
       const ctx = canvas.getContext("2d");
-      let width, height;
-      let particles = [];
-      const particleCount = window.innerWidth < 768 ? 30 : 60;
-
-      function resize() {
-        width = canvas.width = window.innerWidth;
-        height = canvas.height = window.innerHeight;
+      if (!ctx) return;
+      let width=0,height=0,frame=0,particles=[];
+      const mobile=window.innerWidth<768;
+      const particleCount=mobile?12:28;
+      const dpr=Math.min(window.devicePixelRatio||1,1.25);
+      function resize(){
+        width=window.innerWidth;height=window.innerHeight;
+        canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);
+        canvas.style.width=width+"px";canvas.style.height=height+"px";
+        ctx.setTransform(dpr,0,0,dpr,0,0);
       }
-      window.addEventListener("resize", resize);
       resize();
-
-      class Particle {
-        constructor() {
-          this.x = Math.random() * width;
-          this.y = Math.random() * height;
-          this.vx = (Math.random() - 0.5) * 0.65;
-          this.vy = (Math.random() - 0.5) * 0.65;
-          this.radius = Math.random() * 2 + 0.8;
-        }
-        update() {
-          this.x += this.vx;
-          this.y += this.vy;
-          if (this.x < 0 || this.x > width) this.vx *= -1;
-          if (this.y < 0 || this.y > height) this.vy *= -1;
-        }
-        draw() {
-          ctx.beginPath();
-          ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-          ctx.fillStyle = "rgba(0, 229, 255, 0.42)";
-          ctx.fill();
-        }
+      window.addEventListener("resize",resize,{passive:true});
+      class Particle{
+        constructor(){this.x=Math.random()*width;this.y=Math.random()*height;this.vx=(Math.random()-.5)*.35;this.vy=(Math.random()-.5)*.35;this.radius=Math.random()*1.4+.6;}
+        update(){this.x+=this.vx;this.y+=this.vy;if(this.x<0||this.x>width)this.vx*=-1;if(this.y<0||this.y>height)this.vy*=-1;}
+        draw(){ctx.beginPath();ctx.arc(this.x,this.y,this.radius,0,Math.PI*2);ctx.fillStyle="rgba(0,229,255,.34)";ctx.fill();}
       }
-
-      for (let i = 0; i < particleCount; i++) {
-        particles.push(new Particle());
-      }
-
-      function animate() {
-        ctx.clearRect(0, 0, width, height);
-
-        for (let i = 0; i < particles.length; i++) {
-          for (let j = i + 1; j < particles.length; j++) {
-            const dx = particles[i].x - particles[j].x;
-            const dy = particles[i].y - particles[j].y;
-            const dist = Math.sqrt(dx * dx + dy * dy);
-
-            if (dist < 125) {
-              ctx.beginPath();
-              ctx.moveTo(particles[i].x, particles[i].y);
-              ctx.lineTo(particles[j].x, particles[j].y);
-              ctx.strokeStyle = `rgba(0, 229, 255, ${0.14 * (1 - dist / 125)})`;
-              ctx.lineWidth = 0.7;
-              ctx.stroke();
-            }
+      for(let i=0;i<particleCount;i++)particles.push(new Particle());
+      let paused=document.hidden;
+      function animate(){
+        if(paused)return;
+        ctx.clearRect(0,0,width,height);
+        for(let i=0;i<particles.length;i++){
+          const p=particles[i];p.update();p.draw();
+          for(let k=i+1;k<particles.length;k++){
+            const q=particles[k],dx=p.x-q.x,dy=p.y-q.y,distSq=dx*dx+dy*dy;
+            if(distSq<10000){const dist=Math.sqrt(distSq);ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);ctx.strokeStyle="rgba(0,229,255,"+(0.10*(1-dist/100))+")";ctx.lineWidth=.55;ctx.stroke();}
           }
         }
-
-        particles.forEach(p => {
-          p.update();
-          p.draw();
-        });
-
-        requestAnimationFrame(animate);
+        frame=requestAnimationFrame(animate);
       }
-
-      animate();
+      function visibility(){paused=document.hidden;if(!paused){cancelAnimationFrame(frame);frame=requestAnimationFrame(animate);}else cancelAnimationFrame(frame);}
+      document.addEventListener("visibilitychange",visibility);
+      frame=requestAnimationFrame(animate);
     }
 
     // ══════════════════════════════════════════════════════════════════════
@@ -649,7 +617,7 @@
       socialItems.forEach(item => {
         const card = document.createElement("a");
         card.href = item.url;
-        card.target = "_blank";
+        card.target = "_blank";\n        card.rel = "noopener noreferrer";
         card.className = `p-6 rounded-3xl glass-card border border-white/10 ${item.color} flex flex-col items-center text-center space-y-4 group transition-all hover:scale-105 active:scale-95 shadow-xl`;
 
         card.innerHTML = `
@@ -1589,7 +1557,8 @@ KETERAMPILAN DAN SERTIFIKASI
 
     // ══════════════════════════════════════════════════════════════════════
     // 17. NAVIGATION & MODALS EVENT BINDINGS
-    // ══════════════════════════════════════════════════════════════════════function initEventListeners() {
+    // ══════════════════════════════════════════════════════════════════════
+    function initEventListeners() {
       const mobileBtn = document.getElementById("mobile-menu-btn");
       const mobileDrawer = document.getElementById("mobile-drawer");
       const hamburgerIcon = document.getElementById("hamburger-icon");
